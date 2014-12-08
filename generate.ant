@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="default">
+    <property name="module" value="default"/>
+    
+    <target name="default" depends="preparation">
+        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/alpha.hdoc" xslresource="${basedir}/xslt/threeLevel.xsl"/>
+        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/sect.hdoc" xslresource="${basedir}/xslt/sect.xsl"/>
+        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/div.hdoc" xslresource="${basedir}/xslt/div.xsl"/>
+    </target>
+    
+    <target name="preparation">
+        <delete dir="${basedir}/resultat"></delete>
+        <mkdir dir="${basedir}/resultat" />      
+    </target>
+</project> 
