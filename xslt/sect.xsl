@@ -32,6 +32,7 @@
     
     <xsl:template match="node">
         <xsl:element name="section" >
+            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
             <header>
                 <h1>
                     <xsl:value-of select="@TEXT"/>
