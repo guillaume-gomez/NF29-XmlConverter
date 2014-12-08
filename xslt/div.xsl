@@ -32,6 +32,7 @@
     
     <xsl:template match="node">
         <xsl:element name="section" >
+            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
             <header>
                 <h1>
                     <xsl:value-of select="@TEXT"/>
@@ -40,10 +41,31 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
+    <xsl:template match="node[not(node) and (preceding-sibling::node/node or  following-sibling::node/node)]" priority="5">
+       <xsl:element name="section">
+           <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
+           <xsl:element name="header">
+               <xsl:element name="h1">Temp</xsl:element>
+           </xsl:element>
+           
+           <xsl:element name="div" >
+               <xsl:element name="h6" >
+                   <xsl:value-of select="@TEXT"/>
+               </xsl:element> 
+               <p>Testdjgjfkj</p>
+               <xsl:apply-templates/>
+           </xsl:element>
+           
+       </xsl:element>
+    </xsl:template>
     
-    <xsl:template match="node/node">
-        <xsl:element name="div">
-            <h6><xsl:value-of select="@TEXT"/></h6>
+    <xsl:template match="node[not(node)]">
+        <xsl:element name="div" >
+            <xsl:element name="h6" >
+                <xsl:value-of select="@TEXT"/>
+            </xsl:element> 
+            <p>Testdjgjfkj</p>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
