@@ -5,36 +5,52 @@
     <target name="default" depends="preparation">
         <echo>----------------------------Begin of conversion----------------------------------</echo>
         
-        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/alpha.hdoc" xslresource="${basedir}/xslt/threeLevel.xsl"/>
-        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/sect.hdoc" xslresource="${basedir}/xslt/sect.xsl"/>
-        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/div.hdoc" xslresource="${basedir}/xslt/div.xsl"/>
-        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/h2Prim.hdoc" xslresource="${basedir}/xslt/h2prim.xsl"/>
-        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/h3Prim.hdoc" xslresource="${basedir}/xslt/h3prim.xsl"/>
-        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/h3.hdoc" xslresource="${basedir}/xslt/h3.xsl"/>
+        <!-- 
+         <xslt in="${basedir}/test.mm" out="${basedir}/temp/div.hdoc" xslresource="${basedir}/xslt/div.xsl"/>
+         <xslt in="${basedir}/test.mm" out="${basedir}/temp/alpha.hdoc" xslresource="${basedir}/xslt/threeLevel.xsl"/>
+         <xslt in="${basedir}/test.mm" out="${basedir}/temp/h2Prim.hdoc" xslresource="${basedir}/xslt/h2prim.xsl"/>
+         <xslt in="${basedir}/test.mm" out="${basedir}/temp/h3Prim.hdoc" xslresource="${basedir}/xslt/h3prim.xsl"/>
+         <xslt in="${basedir}/test.mm" out="${basedir}/temp/h3.hdoc" xslresource="${basedir}/xslt/h3.xsl"/> 
+      -->  
       
-        <ant taskname="MakeArchive"></ant>
+        <antcall target="MakeArchive">
+            <param name="myXSLT" value="sect.xsl"/>
+            <param name="hdocName" value="sect"/>
+        </antcall>
+        
+        <antcall target="MakeArchive">
+            <param name="myXSLT" value="div.xsl"/>
+            <param name="hdocName" value="div"/>
+        </antcall>
+        
+        
+        <delete dir="${basedir}/temp"/>
         <echo>----------------------------End of conversion----------------------------------</echo>
     </target>
     
     <target name="preparation">
         <echo>Preparation for the conversion</echo>
-        <delete dir="${basedir}/resultat"></delete>
-        <mkdir dir="${basedir}/resultat" />
+        <delete dir="${basedir}/temp"></delete>
+        <mkdir dir="${basedir}/temp" />
         <delete dir="${basedir}/archive"></delete>
         <mkdir dir="${basedir}/archive" />
         
-        <!-- //delete resulat -->  
+        <!-- //delete temp -->  
         <echo>---End of preparation</echo>
     </target>
     
    <target name="MakeArchive" >
        <echo>Begin archiving</echo>
-       <mkdir dir="${basedir}/resultat/${hdocName}"/>
-       <mkdir dir="${basedir}/resultat/${hdocName}/META-INF"/>
-       <copyfile src="${basedir}/mimetype" dest="${basedir}/resultat/${hdocName}/mimetype"/>
-       <xslt in="${basedir}/test.mm" out="${basedir}/resultat/${hdocName}/content.xml" xslresource="${basedir}/xslt/makeContainer.xsl"/>
+       <mkdir dir="${basedir}/temp/${hdocName}"/>
+       <mkdir dir="${basedir}/temp/${hdocName}/META-INF"/>
+       <copyfile src="${basedir}/mimetype" dest="${basedir}/temp/${hdocName}/mimetype"/>
+       
+       <xslt in="${basedir}/test.mm" out="${basedir}/temp/${hdocName}/META-INF/container.xml" xslresource="${basedir}/xslt/makeContainer.xsl"/>
+       <xslt in="${basedir}/test.mm" out="${basedir}/temp/${hdocName}/content.xml" xslresource="${basedir}/xslt/${myXSLT}"/>
        
        <zip destfile="${basedir}/archive/${hdocName}.hdoc"
-           basedir="${basedir}/resultat/${hdocName}"/>
+       basedir="${basedir}/temp/${hdocName}"/>
+       
+       <echo>End archiving</echo>
    </target>
 </project> 
