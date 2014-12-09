@@ -3,13 +3,38 @@
     <property name="module" value="default"/>
     
     <target name="default" depends="preparation">
+        <echo>----------------------------Begin of conversion----------------------------------</echo>
+        
         <xslt in="${basedir}/test.mm" out="${basedir}/resultat/alpha.hdoc" xslresource="${basedir}/xslt/threeLevel.xsl"/>
         <xslt in="${basedir}/test.mm" out="${basedir}/resultat/sect.hdoc" xslresource="${basedir}/xslt/sect.xsl"/>
         <xslt in="${basedir}/test.mm" out="${basedir}/resultat/div.hdoc" xslresource="${basedir}/xslt/div.xsl"/>
+        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/h2Prim.hdoc" xslresource="${basedir}/xslt/h2prim.xsl"/>
+        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/h3Prim.hdoc" xslresource="${basedir}/xslt/h3prim.xsl"/>
+        <xslt in="${basedir}/test.mm" out="${basedir}/resultat/h3.hdoc" xslresource="${basedir}/xslt/h3.xsl"/>
+      
+        <ant taskname="MakeArchive"></ant>
+        <echo>----------------------------End of conversion----------------------------------</echo>
     </target>
     
     <target name="preparation">
+        <echo>Preparation for the conversion</echo>
         <delete dir="${basedir}/resultat"></delete>
-        <mkdir dir="${basedir}/resultat" />      
+        <mkdir dir="${basedir}/resultat" />
+        <delete dir="${basedir}/archive"></delete>
+        <mkdir dir="${basedir}/archive" />
+        
+        <!-- //delete resulat -->  
+        <echo>---End of preparation</echo>
     </target>
+    
+   <target name="MakeArchive" >
+       <echo>Begin archiving</echo>
+       <mkdir dir="${basedir}/resultat/${hdocName}"/>
+       <mkdir dir="${basedir}/resultat/${hdocName}/META-INF"/>
+       <copyfile src="${basedir}/mimetype" dest="${basedir}/resultat/${hdocName}/mimetype"/>
+       <xslt in="${basedir}/test.mm" out="${basedir}/resultat/${hdocName}/content.xml" xslresource="${basedir}/xslt/makeContainer.xsl"/>
+       
+       <zip destfile="${basedir}/archive/${hdocName}.hdoc"
+           basedir="${basedir}/resultat/${hdocName}"/>
+   </target>
 </project> 

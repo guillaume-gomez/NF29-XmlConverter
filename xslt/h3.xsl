@@ -20,25 +20,34 @@
                 <xsl:apply-templates/>
             </body>
         </html>
-    
-   </xsl:template>
-   
-       
-    <xsl:template match="node[1]" mode="header">
-           <title><xsl:value-of select="@TEXT"/></title>
-            <meta charset="utf-8"/>
-            <meta name="author" content=""/>
+        
     </xsl:template>
     
-    <xsl:template match="node[not(node/node/node)] | node">
+    
+    <xsl:template match="node[1]" mode="header">
+        <title><xsl:value-of select="@TEXT"/></title>
+        <meta charset="utf-8"/>
+        <meta name="author" content=""/>
+    </xsl:template>
+    
+    <xsl:template match="node[not(node/node/node/sect)] | node">
         <xsl:element name="section" >
             <xsl:attribute name="idem">toputTheRightVariable</xsl:attribute>
             <xsl:element name="header" >
                 <xsl:element name="h1" >
                     <xsl:value-of select="@TEXT"/>
-                    </xsl:element>
+                </xsl:element>
             </xsl:element>
-             <xsl:apply-templates/>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="node[not(node/node/node)]">
+        <xsl:element name="section" >
+            <xsl:element name="h1" >
+                <xsl:value-of select="@TEXT"/>
+            </xsl:element>    
+            <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
     
@@ -46,19 +55,15 @@
         <xsl:element name="div" >
             <xsl:element name="h6" >
                 <xsl:value-of select="@TEXT"/>
-            </xsl:element>    
+            </xsl:element>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
     
     <xsl:template match="node[not(node)]">
-        <xsl:element name="div" >
-            <xsl:element name="h6" >
+            <xsl:element name="p" >
                 <xsl:value-of select="@TEXT"/>
             </xsl:element>
-            <p>TEST</p>
-            <xsl:apply-templates/>
-        </xsl:element>
     </xsl:template>
     
     
