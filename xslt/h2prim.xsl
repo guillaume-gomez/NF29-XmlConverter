@@ -31,7 +31,7 @@
     </xsl:template>
     
     <xsl:template match="node">
-        <xsl:element name="section" >
+        <xsl:element name="section">
             <header>
                 <h1>
                     <xsl:value-of select="@TEXT"/>
@@ -41,26 +41,47 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="node[not(node/node/node)]">
-        <xsl:element name="sectionTEMPORAIRE">
+    <xsl:template match="node[not(node/node)]">
+        <xsl:element name="section">
+            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
+            <header>
+                <h1>
+                    <xsl:value-of select="@TEXT"/>
+                </h1>
+            </header>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="node[not(node/node)]">
-        <xsl:element name="div" >
+
+    
+    <xsl:template match="node[not(node) and (preceding-sibling::node/node or  following-sibling::node/node)]" priority="5">
+        <xsl:element name="section">
+            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
+            <xsl:element name="header">
+                <xsl:element name="h1"><xsl:value-of select="@TEXT"/></xsl:element>
+            </xsl:element>
+            
+            <xsl:element name="div" >
+                <xsl:element name="h6" >
+                    <xsl:value-of select="@TEXT"/>
+                </xsl:element> 
+                <p></p>
+                <xsl:apply-templates/>
+            </xsl:element>
+            
+        </xsl:element>
+    </xsl:template>
+    
+    
+    <xsl:template match="node[not(node)]">
+        <xsl:element name="div">
             <xsl:element name="h6" >
                 <xsl:value-of select="@TEXT"/>
-            </xsl:element> 
-            <p>Testdjgjfkj</p>
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    
-    <xsl:template match="node[not(node/node/node)]">
-        <xsl:element name="p" >
+             </xsl:element>
+            <xsl:element name="p" >
                 <xsl:value-of select="@TEXT"/>
-            <p>Testdjgjfkj</p>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
     
