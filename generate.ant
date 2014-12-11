@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." default="default">
     <property name="module" value="default"/>
+    <property name="inputFile" value="test.mm"></property>
     
     <target name="default" depends="preparation">
         <echo>----------------------------Begin of conversion----------------------------------</echo>
@@ -45,12 +46,20 @@
        <mkdir dir="${basedir}/temp/${hdocName}/META-INF"/>
        <copyfile src="${basedir}/mimetype" dest="${basedir}/temp/${hdocName}/mimetype"/>
        
-       <xslt in="${basedir}/test.mm" out="${basedir}/temp/${hdocName}/META-INF/container.xml" xslresource="${basedir}/xslt/makeContainer.xsl"/>
-       <xslt in="${basedir}/test.mm" out="${basedir}/temp/${hdocName}/content.xml" xslresource="${basedir}/xslt/${myXSLT}"/>
+       <xslt in="${basedir}/${inputFile}" out="${basedir}/temp/${hdocName}/META-INF/container.xml" xslresource="${basedir}/xslt/makeContainer.xsl"/>
+       <xslt in="${basedir}/${inputFile}" out="${basedir}/temp/${hdocName}/content.xml" xslresource="${basedir}/xslt/${myXSLT}"/>
        
        <zip destfile="${basedir}/archive/${hdocName}.hdoc"
        basedir="${basedir}/temp/${hdocName}"/>
        
        <echo>End archiving</echo>
    </target>
+    
+    <!--<target name="validate">
+        <jing rngfile="xslt.rng">
+            <fileset dir="xsl" includes="**/*.xsl"/>
+        </jing>
+    </target> -->
+    
+    
 </project> 

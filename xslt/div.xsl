@@ -53,7 +53,7 @@
                <xsl:element name="h6" >
                    <xsl:value-of select="@TEXT"/>
                </xsl:element> 
-               <p>Testdjgjfkj</p>
+               <p></p>
                <xsl:apply-templates/>
            </xsl:element>
            
@@ -65,7 +65,7 @@
             <xsl:element name="h6" >
                 <xsl:value-of select="@TEXT"/>
             </xsl:element> 
-            <p>Testdjgjfkj</p>
+            <p> </p>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
