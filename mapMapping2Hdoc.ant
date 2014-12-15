@@ -71,15 +71,31 @@
        <zip destfile="${resultFile}/hdoc/${hdocName}.hdoc"
        basedir="${basedir}/temp/${hdocName}"/>
 
-	<!-- to generate scar files -->
-    <!-- <condition property="converting.set" else="false"> -->
-     	 <ant antfile="${basedir}/hdoctoopale/hdoc_to_opale.ant" dir="${basedir}/hdoctoopale">
-            <property name="InputPath" value="${resultFile}/hdoc/${hdocName}.hdoc"/>
-            <property name="OutputPath" value="${resultFile}/scar/${hdocName}.scar"/>
-        </ant>
+
+
+    	<!-- to generate scar files -->
+      <antcall target="opale_conversion"/>
+    
     <!-- </condition> -->
        
        <echo>end data conversion</echo>
    </target>
+
+   <target name="opale_conversion" if="${opale.exists}" depends="opale_test">
+      <!-- <condition property="converting.set" else="false"> -->
+       <ant antfile="${basedir}/hdoctoopale/hdoc_to_opale.ant" dir="${basedir}/hdoctoopale">
+            <property name="InputPath" value="${resultFile}/hdoc/${hdocName}.hdoc"/>
+            <property name="OutputPath" value="${resultFile}/scar/${hdocName}.scar"/>
+        </ant>
+   </target>
+
+   <!-- check if opale convertion is asked by the user -->
+    <target name="opale_test">
+      <condition property="opale.exists" else="false">
+          <equals arg1="${opale}" arg2="true"/>
+      </condition>
+      
+      <echo message="Run opale conversion ? ${opale.exists}"/>
+  </target>
     
 </project> 
