@@ -1,73 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." default="default">
     <property name="module" value="default"/>
-    <property name="inputFile" value="test.mm"></property>
+    <!--
+	only for the debug
+	<property name="inputPath" value="test.mm"></property>
+    	<property name="outputPath"	value="content.xml"/>
+	<property name="converting"	value="yes"/> 
+    -->
+
+    <property name="resultFile" value="${basedir}/result"/>
     
     <target name="default" depends="preparation">
         <echo>----------------------------Begin of conversion----------------------------------</echo>
-        
-        <!-- 
-         <xslt in="${basedir}/test.mm" out="${basedir}/temp/div.hdoc" xslresource="${basedir}/xslt/div.xsl"/>
-         <xslt in="${basedir}/test.mm" out="${basedir}/temp/alpha.hdoc" xslresource="${basedir}/xslt/threeLevel.xsl"/>
-         <xslt in="${basedir}/test.mm" out="${basedir}/temp/h2Prim.hdoc" xslresource="${basedir}/xslt/h2prim.xsl"/>
-         <xslt in="${basedir}/test.mm" out="${basedir}/temp/h3Prim.hdoc" xslresource="${basedir}/xslt/h3prim.xsl"/>
-         <xslt in="${basedir}/test.mm" out="${basedir}/temp/h3.hdoc" xslresource="${basedir}/xslt/h3.xsl"/> 
- <xslt in="${basedir}/test.mm" out="${basedir}/temp/alpha.hdoc" xslresource="${basedir}/xslt/threeLevel.xsl"/>      
-      -->  
-	
-	<xslt in="${basedir}/test.mm" out="${basedir}/temp/h2Prim.hdoc" xslresource="${basedir}/xslt/h2prim.xsl"/>
 
-        <antcall target="MakeArchive">
+
+	<!-- Sect Schema : only sect element -->
+        <antcall target="Makehdoc">
             <param name="myXSLT" value="sect.xsl"/>
             <param name="hdocName" value="sect"/>
         </antcall>
         
-        <antcall target="MakeArchive">
+	<!-- Div Schema : sect and div element -->
+        <antcall target="Makehdoc">
             <param name="myXSLT" value="div.xsl"/>
             <param name="hdocName" value="div"/>
         </antcall>
 
-	  <antcall target="MakeArchive">
+	<!-- Div Schema : sect, div and p element -->
+	  <antcall target="Makehdoc">
             <param name="myXSLT" value="threeLevel.xsl"/>
             <param name="hdocName" value="three"/>
         </antcall>
         
 
-         <!--<delete dir="${basedir}/temp"/> -->
+         <delete dir="${basedir}/temp"/>
         <echo>----------------------------End of conversion----------------------------------</echo>
     </target>
     
     <target name="preparation">
-        <echo>Preparation for the conversion</echo>
+        <echo>Setting up the conversion</echo>
         <delete dir="${basedir}/temp"></delete>
         <mkdir dir="${basedir}/temp" />
-        <delete dir="${basedir}/archive"></delete>
-        <mkdir dir="${basedir}/archive" />
-        
+        <delete dir="${resultFile}/hdoc"></delete>
+        <mkdir dir="${resultFile}/hdoc" />
+	<delete dir="${resultFile}/scar"></delete>
+	
+        <mkdir dir="${resultFile}/scar" />
+	<!--<condition>
+             <equals arg1="${foo}" arg2=""/>
+
+     </condition> -->
+
+
         <!-- //delete temp -->  
-        <echo>---End of preparation</echo>
+        <echo>--- End ----</echo>
     </target>
     
-   <target name="MakeArchive" >
-       <echo>Begin archiving</echo>
+   <!-- Convert a mindMap file into a hdoc, with a xsl schema specified in the parameter -->
+   <target name="Makehdoc" >
+       <echo>Begin data conversion</echo>
        <mkdir dir="${basedir}/temp/${hdocName}"/>
        <mkdir dir="${basedir}/temp/${hdocName}/META-INF"/>
-       <copyfile src="${basedir}/mimetype" dest="${basedir}/temp/${hdocName}/mimetype"/>
+       <copy file="${basedir}/mimetype" tofile="${basedir}/temp/${hdocName}/mimetype"/>
+       <!-- create the container file with an XSLT transformation -->
+       <xslt in="${basedir}/${inputPath}" out="${basedir}/temp/${hdocName}/META-INF/container.xml" xslresource="${basedir}/xslt/makeContainer.xsl"/>
+	<!-- create the file which contains the freemind data converted-->
+       <xslt in="${basedir}/${inputPath}" out="${basedir}/temp/${hdocName}/content.xml" xslresource="${basedir}/xslt/${myXSLT}"/>
        
-       <xslt in="${basedir}/${inputFile}" out="${basedir}/temp/${hdocName}/META-INF/container.xml" xslresource="${basedir}/xslt/makeContainer.xsl"/>
-       <xslt in="${basedir}/${inputFile}" out="${basedir}/temp/${hdocName}/content.xml" xslresource="${basedir}/xslt/${myXSLT}"/>
-       
-       <zip destfile="${basedir}/archive/${hdocName}.hdoc"
+	<!-- zipping files as the hdoc format -->
+       <zip destfile="${resultFile}/hdoc/${hdocName}.hdoc"
        basedir="${basedir}/temp/${hdocName}"/>
+
+	<!-- to generate scar files -->
+    <!-- <condition property="converting.set" else="false"> -->
+     	 <ant antfile="${basedir}/hdoctoopale/hdoc_to_opale.ant" dir="${basedir}/hdoctoopale">
+            <property name="InputPath" value="${resultFile}/hdoc/${hdocName}.hdoc"/>
+            <property name="OutputPath" value="${resultFile}/scar/${hdocName}.scar"/>
+        </ant>
+    <!-- </condition> -->
        
-       <echo>End archiving</echo>
+       <echo>end data conversion</echo>
    </target>
-    
-    <!--<target name="validate">
-        <jing rngfile="xslt.rng">
-            <fileset dir="xsl" includes="**/*.xsl"/>
-        </jing>
-    </target> -->
-    
     
 </project> 
