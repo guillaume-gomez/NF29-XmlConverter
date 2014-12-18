@@ -30,9 +30,20 @@
             <meta name="author" content=""/>
     </xsl:template>
     
-    <xsl:template match="node[not(node/node/node)] | node">
+    <xsl:template match="node">
         <xsl:element name="section" >
-            <xsl:attribute name="idem">toputTheRightVariable</xsl:attribute>
+            <xsl:element name="header" >
+                <xsl:element name="h1" >
+                    <xsl:value-of select="@TEXT"/>
+                </xsl:element>
+            </xsl:element>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="node[not(node/node/node)]">
+        <xsl:element name="section" >
+            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
             <xsl:element name="header" >
                 <xsl:element name="h1" >
                     <xsl:value-of select="@TEXT"/>
@@ -42,24 +53,25 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="node[not(node/node)]">
-        <xsl:element name="div" >
-            <xsl:element name="h6" >
-                <xsl:value-of select="@TEXT"/>
-            </xsl:element>    
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    
-    <xsl:template match="node[not(node)]">
+    <xsl:template match="node[not(node/node)] | node[not(node)]">
         <xsl:element name="div" >
             <xsl:element name="h6" >
                 <xsl:value-of select="@TEXT"/>
             </xsl:element>
-            <p>TEST</p>
-            <xsl:apply-templates/>
+            <p/>
         </xsl:element>
+        <xsl:apply-templates/>
     </xsl:template>
     
-    
+    <xsl:template match="node[not(node/node) and (preceding-sibling::node/node/node or  following-sibling::node/node/node)]" priority="5">
+        <xsl:element name="section">
+            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
+            <xsl:element name="header">
+                <xsl:element name="h1"><xsl:value-of select="@TEXT"/></xsl:element>
+            </xsl:element>
+            
+                <xsl:apply-templates/>         
+        </xsl:element>
+    </xsl:template>
+        
 </xsl:stylesheet>

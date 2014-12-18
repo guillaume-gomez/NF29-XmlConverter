@@ -32,6 +32,17 @@
     
     <xsl:template match="node">
         <xsl:element name="section" >
+            <header>
+                <h1>
+                    <xsl:value-of select="@TEXT"/>
+                </h1>
+            </header>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="node[not(node)]" priority="5">
+        <xsl:element name="section" >
             <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
             <header>
                 <h1>

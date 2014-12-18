@@ -32,7 +32,6 @@
     
     <xsl:template match="node">
         <xsl:element name="section" >
-            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
             <header>
                 <h1>
                     <xsl:value-of select="@TEXT"/>
@@ -46,7 +45,7 @@
        <xsl:element name="section">
            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
            <xsl:element name="header">
-               <xsl:element name="h1">Temp</xsl:element>
+               <xsl:element name="h1"><xsl:value-of select="@TEXT"/></xsl:element>
            </xsl:element>
            
            <xsl:element name="div" >
