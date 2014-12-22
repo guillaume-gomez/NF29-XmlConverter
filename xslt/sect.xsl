@@ -52,6 +52,9 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
+
+<xsl:template match="richcontent"/>
    
    
 </xsl:stylesheet>

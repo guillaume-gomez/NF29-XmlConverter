@@ -16,7 +16,7 @@
             <head>
                 <xsl:apply-templates mode="header"></xsl:apply-templates>
             </head>
-            <body>       
+            <body>        
                 <xsl:apply-templates/>
             </body>
         </html>
@@ -26,8 +26,8 @@
     
     <xsl:template match="node[1]" mode="header">
             <title><xsl:value-of select="@TEXT"/></title>
-        <meta charset="utf-8"/>
-        <meta name="author" content=""/>
+            <meta charset="utf-8"/>
+            <meta name="author" content=""/>
     </xsl:template>
     
     <xsl:template match="node">
@@ -40,35 +40,18 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-
-    <xsl:template match="node[not(node) and (preceding-sibling::node/node or  following-sibling::node/node)]" priority="5">
-       <xsl:element name="section">
-           <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
-           <xsl:element name="header">
-               <xsl:element name="h1"><xsl:value-of select="@TEXT"/></xsl:element>
-           </xsl:element>
-           
-           <xsl:element name="div" >
-               <xsl:element name="h6" >
-                   <xsl:value-of select="@TEXT"/>
-               </xsl:element> 
-               <p></p>
-               <xsl:apply-templates/>
-           </xsl:element>
-           
-       </xsl:element>
-    </xsl:template>
     
-    <xsl:template match="node[not(node)]">
-        <xsl:element name="div" >
-            <xsl:element name="h6" >
-                <xsl:value-of select="@TEXT"/>
-            </xsl:element> 
-            <p> </p>
+    <xsl:template match="node[not(node)]" priority="5">
+        <xsl:element name="section" >
+            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
+            <header>
+                <h1>
+                    <xsl:value-of select="@TEXT"/>
+                </h1>
+            </header>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-
-    <xsl:template match="richcontent"/>
-    
+   
+   
 </xsl:stylesheet>
