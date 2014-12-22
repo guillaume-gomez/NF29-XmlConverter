@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="default">
+    <property name="module" value="default"/>
+    <!--
+	only for the debug
+	<property name="inputPath" value="test.mm"></property>
+    	<property name="outputPath"	value="content.xml"/>
+	<property name="converting"	value="yes"/> 
+    -->
+
+    <property name="resultFile" value="${basedir}/result"/>
+    
+    <target name="default" depends="preparation">
+        <echo>----------------------------Begin of conversion----------------------------------</echo>
+
+
+	<!-- Sect Schema : only sect element -->
+        <antcall target="Makehdoc">
+            <param name="myXSLT" value="sect.xsl"/>
+            <param name="hdocName" value="sect"/>
+        </antcall>
+        
+	<!-- Div Schema : sect and div element -->
+        <antcall target="Makehdoc">
+            <param name="myXSLT" value="div.xsl"/>
+            <param name="hdocName" value="div"/>
+        </antcall>
+
+	<!-- Div Schema : sect, div and p element -->
+	  <antcall target="Makehdoc">
+            <param name="myXSLT" value="threeLevel.xsl"/>
+            <param name="hdocName" value="three"/>
+        </antcall>
+        
+
+         <delete dir="${basedir}/temp"/>
+        <echo>----------------------------End of conversion----------------------------------</echo>
+    </target>
+    
+    <target name="preparation">
+        <echo>Setting up the conversion</echo>
+        <delete dir="${basedir}/temp"></delete>
+        <mkdir dir="${basedir}/temp" />
+        <delete dir="${resultFile}/hdoc"></delete>
+        <mkdir dir="${resultFile}/hdoc" />
+	<delete dir="${resultFile}/scar"></delete>
+	
+        <mkdir dir="${resultFile}/scar" />
+	<!--<condition>
+             <equals arg1="${foo}" arg2=""/>
+
+     </condition> -->
+
+
+        <!-- //delete temp -->  
+        <echo>--- End ----</echo>
+    </target>
+    
+   <!-- Convert a mindMap file into a hdoc, with a xsl schema specified in the parameter -->
+   <target name="Makehdoc" >
+       <echo>Begin data conversion</echo>
+       <mkdir dir="${basedir}/temp/${hdocName}"/>
+       <mkdir dir="${basedir}/temp/${hdocName}/META-INF"/>
+       <copy file="${basedir}/mimetype" tofile="${basedir}/temp/${hdocName}/mimetype"/>
+       <!-- create the container file with an XSLT transformation -->
+       <xslt in="${basedir}/${inputPath}" out="${basedir}/temp/${hdocName}/META-INF/container.xml" xslresource="${basedir}/xslt/makeContainer.xsl"/>
+	<!-- create the file which contains the freemind data converted-->
+       <xslt in="${basedir}/${inputPath}" out="${basedir}/temp/${hdocName}/content.xml" xslresource="${basedir}/xslt/${myXSLT}"/>
+       
+	<!-- zipping files as the hdoc format -->
+       <zip destfile="${resultFile}/hdoc/${hdocName}.hdoc"
+       basedir="${basedir}/temp/${hdocName}"/>
+
+
+
+    	<!-- to generate scar files -->
+      <antcall target="opale_conversion"/>
+    
+    <!-- </condition> -->
+       
+       <echo>end data conversion</echo>
+   </target>
+
+   <target name="opale_conversion" if="${opale.exists}" depends="opale_test">
+      <!-- <condition property="converting.set" else="false"> -->
+       <ant antfile="${basedir}/hdoctoopale/hdoc_to_opale.ant" dir="${basedir}/hdoctoopale">
+            <property name="InputPath" value="${resultFile}/hdoc/${hdocName}.hdoc"/>
+            <property name="OutputPath" value="${resultFile}/scar/${hdocName}.scar"/>
+        </ant>
+   </target>
+
+   <!-- check if opale convertion is asked by the user -->
+    <target name="opale_test">
+      <condition property="opale.exists" else="false">
+          <equals arg1="${opale}" arg2="true"/>
+      </condition>
+      
+      <echo message="Run opale conversion ? ${opale.exists}"/>
+  </target>
+    
+</project> 

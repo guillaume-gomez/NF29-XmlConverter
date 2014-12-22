@@ -23,7 +23,7 @@
     <br />
   </div>
   <button type="submit" name="make_hdoc" class="btn btn-default">Convertir en  HDOC</button>
-  <button type="submit" name="make_scar" class="btn btn-default">Convertir en  Opale(lisible par scenari)</button>
+  <button type="submit" name="make_scar" class="btn btn-default">Convertir en  Scar(lisible par scenari)</button>
 </form>
 <hr>
 <pre>
@@ -65,7 +65,7 @@ if (isset($_FILES['myfile']) AND $_FILES['myfile']['error'] == 0)
                   if(isset($_POST['make_scar'])) 
                   {
                     echo "</pre><pre>";
-                    $cmd = "ant -buildfile mapMapping2Hdoc.ant -DinputPath uploads/fileToConvert -Dopale true";
+                    $cmd = "ant -buildfile mindMapping2Hdoc.ant -DinputPath uploads/fileToConvert -Dopale true";
                     $out_cmd = shell_exec($cmd);
                     echo "<strong>ant script:</strong> $cmd \n\n";
                     echo $out_cmd;
@@ -73,7 +73,7 @@ if (isset($_FILES['myfile']) AND $_FILES['myfile']['error'] == 0)
                   }
                   else
                   {
-                      $cmd = 'ant -buildfile mapMapping2Hdoc.ant -DinputPath uploads/fileToConvert';
+                      $cmd = 'ant -buildfile mindMapping2Hdoc.ant -DinputPath uploads/fileToConvert';
                       $out_cmd = shell_exec($cmd);
                       echo "<strong>ant script:</strong> $cmd \n\n";
                       echo $out_cmd;

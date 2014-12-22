@@ -4,7 +4,7 @@
 - put your freemind file in the mapMapping_to_Hdoc 
 - enter the command line :
 	- linux : ant -buildfile mapMapping2Hdoc.ant -DinputPath <yourFilename>
-	- windows : C:\ant\bin\ant -buildfile mapMapping2Hdoc.ant -DinputPath <yourFilename>
+	- windows : C:\ant\bin\ant -buildfile mindMapping2Hdoc.ant -DinputPath <yourFilename>
 
 you will find the result in the folder result/hdoc
 
@@ -12,6 +12,6 @@ you will find the result in the folder result/hdoc
 - put your freemind file in the mapMapping_to_Hdoc 
 - enter the command line :
 	- linux : ant -buildfile mapMapping2Hdoc.ant -DinputPath <yourFilename>  -Dopale true
-	- windows : C:\ant\bin\ant -buildfile mapMapping2Hdoc.ant -DinputPath <yourFilename>  -Dopale true
+	- windows : C:\ant\bin\ant -buildfile mindMapping2Hdoc.ant -DinputPath <yourFilename>  -Dopale true
 you will find the result in the folder result/opale
 
