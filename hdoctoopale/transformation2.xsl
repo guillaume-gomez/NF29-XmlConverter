@@ -91,7 +91,7 @@
 
   <!-- Body related templates. -->
     <xsl:template match="h:body">
-      <xsl:if test="./h:section[@data-hdoc-type = 'introduction']">
+      <xsl:if test="./h:section[@data-hdoc-type = 'introduction']/h:div/*">
         <sp:intro>
           <op:res>
             <xsl:apply-templates select="./h:section[@data-hdoc-type = 'introduction']/h:div/*" />
@@ -99,10 +99,16 @@
         </sp:intro>
       </xsl:if>
 
+      <!-- In case an introduction contains subsections, we consider them as regular sections outside from it -->
+      <xsl:apply-templates select="./h:section[@data-hdoc-type = 'introduction']/h:section"/>
+
       <!-- Not selecting introductions or conclusions -->
       <xsl:apply-templates select="./h:section[not(@data-hdoc-type = 'introduction' or @data-hdoc-type = 'conclusion')]"/>
 
-      <xsl:if test="./h:section[@data-hdoc-type = 'conclusion']">
+      <!-- Same thing as for the introduction -->
+      <xsl:apply-templates select="./h:section[@data-hdoc-type = 'conclusion']/h:section"/>
+
+      <xsl:if test="./h:section[@data-hdoc-type = 'conclusion']/h:div/*">
         <sp:conclu>
           <op:res>
             <xsl:apply-templates select="./h:section[@data-hdoc-type = 'conclusion']/h:div/*" />
@@ -363,34 +369,68 @@
   
   <!-- Div related templates. -->
     <!-- Text related templates -->
-      <xsl:template match="h:p[1]">
-        <xsl:choose>
-          <xsl:when test="parent::*[name() = 'div']">
-            <sp:txt>
-              <op:txt>
-                <xsl:call-template name="psuperior"/>
-              </op:txt>
-            </sp:txt>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:call-template name="psuperior"/>
-          </xsl:otherwise>
-        </xsl:choose>
+
+    <!-- This template is a little peculiar: the idea is to match the first block and then to call a loop on it and its siblings -->
+    <!-- This is to avoid having several text blocks for the same <div> -->
+    <!-- This could be handled at the div level -->
+      <xsl:template match="h:p | h:ul | h:ol">
+        <xsl:if test="not(preceding-sibling::h:p)">
+          <xsl:if test="not(preceding-sibling::h:ul)">
+            <xsl:if test="not(preceding-sibling::h:ol)">
+              <xsl:choose>
+
+                <!-- If it is directly included in a div, we have to add Opale's text markups -->
+                <xsl:when test="parent::*[name() = 'div']">
+                  <sp:txt>
+                    <op:txt>
+                      <xsl:call-template name="blockloop"/>
+                    </op:txt>
+                  </sp:txt>
+                </xsl:when>
+
+                <!-- Otherwise, we can directly display it (this can happen when it is included within a list or a table) -->
+                <xsl:otherwise>
+                  <xsl:call-template name="blockloop"/>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:if>
+          </xsl:if>
+        </xsl:if>
       </xsl:template>
 
-      <xsl:template name="psuperior">
+      <xsl:template name="blockloop">
         <xsl:for-each select=". | ./following-sibling::*">
           <xsl:choose>
+
+            <!-- Paragraph -->
             <xsl:when test="name() = 'p'">
               <sc:para>
                 <xsl:apply-templates select="./* | ./text()"/>
               </sc:para>
             </xsl:when>
+
+            <!-- Unordered list -->
+            <xsl:when test="name() = 'ul'">
+              <sc:itemizedList>
+                <xsl:apply-templates select="./* | ./text()"/>
+              </sc:itemizedList>
+            </xsl:when>
+
+            <!-- Ordered list -->
+            <xsl:when test="name() = 'ol'">
+              <sc:orderedList>
+                <xsl:apply-templates select="./* | ./text()"/>
+              </sc:orderedList>
+            </xsl:when>
+
           </xsl:choose>
         </xsl:for-each>
       </xsl:template>
 
-      <xsl:template match="h:p"/>
+      <!-- These templates are made to avoid matching text block elements that are not the first ones -->
+      <!--<xsl:template match="h:p"/>
+      <xsl:template match="h:ul"/>
+      <xsl:template match="h:ol"/>-->
 
       <xsl:template match="h:i">
         <sc:inlineStyle role="spec">
@@ -431,42 +471,6 @@
           </xsl:if>
           <xsl:value-of select="." />
         </sc:phrase>
-      </xsl:template>
-      <xsl:template match="h:ul">
-        <xsl:choose>
-          <xsl:when test="parent::*[name() = 'div']"> <!-- If this <ul> is a direct child of a <div> then it must be surrounded by Opale's text markups. -->
-            <sp:txt>
-              <op:txt>
-                <sc:itemizedList>
-                  <xsl:apply-templates select="./*"/>
-                </sc:itemizedList>
-              </op:txt>
-            </sp:txt>
-          </xsl:when>
-          <xsl:otherwise>
-              <sc:itemizedList>
-                <xsl:apply-templates select="./*"/>
-              </sc:itemizedList>
-          </xsl:otherwise>
-        </xsl:choose>
-      </xsl:template>
-      <xsl:template match="h:ol">
-        <xsl:choose>
-          <xsl:when test="parent::*[name() = 'div']"> <!-- If this <ol> is direct child of a <div> then it must be surrounded by Opale's text markups. -->
-            <sp:txt>
-              <op:txt>
-                <sc:orderedList>
-                  <xsl:apply-templates select="./*"/>
-                </sc:orderedList>
-              </op:txt>
-            </sp:txt>
-          </xsl:when>
-          <xsl:otherwise>
-            <sc:orderedList>
-              <xsl:apply-templates select="./*"/>
-            </sc:orderedList>
-          </xsl:otherwise>
-        </xsl:choose>
       </xsl:template>
       <xsl:template match="h:li">
         <sc:listItem>
