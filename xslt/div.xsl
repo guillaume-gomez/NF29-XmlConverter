@@ -23,7 +23,7 @@
         
     </xsl:template>
     
-    
+    <!-- Get the main title -->
     <xsl:template match="node[1]" mode="header">
             <title><xsl:value-of select="@TEXT"/></title>
         <meta charset="utf-8"/>
@@ -41,6 +41,7 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- To avoid a div between sect (impossible in Hdoc) -->
     <xsl:template match="node[not(node) and (preceding-sibling::node/node or  following-sibling::node/node)]" priority="5">
        <xsl:element name="section">
            <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
@@ -59,6 +60,7 @@
        </xsl:element>
     </xsl:template>
     
+    <!-- Get leaf node--> 
     <xsl:template match="node[not(node)]">
         <xsl:element name="div" >
             <xsl:element name="h6" >
@@ -69,6 +71,7 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- it does not manage html freemind tag -->
     <xsl:template match="richcontent"/>
     
 </xsl:stylesheet>

@@ -23,7 +23,7 @@
         
     </xsl:template>
     
-    
+    <!-- The main title --> 
     <xsl:template match="node[1]" mode="header">
             <title><xsl:value-of select="@TEXT"/></title>
             <meta charset="utf-8"/>
@@ -41,6 +41,7 @@
         </xsl:element>
     </xsl:template>
     
+    <!-- To make special sect(unit-of-content)-->
     <xsl:template match="node[not(node)]" priority="5">
         <xsl:element name="section" >
             <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
@@ -54,6 +55,7 @@
     </xsl:template>
 
 
+<!-- it does not manage html freemind tag -->
 <xsl:template match="richcontent"/>
    
    

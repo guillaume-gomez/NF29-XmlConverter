@@ -23,7 +23,7 @@
     
    </xsl:template>
    
-       
+    <!-- Get the main title -->
     <xsl:template match="node[1]" mode="header">
            <title><xsl:value-of select="@TEXT"/></title>
             <meta charset="utf-8"/>
@@ -41,6 +41,7 @@
         </xsl:element>
     </xsl:template>
     
+    <!-- get a n-3 node to match it as sect -->
     <xsl:template match="node[not(node/node/node)]">
         <xsl:element name="section" >
             <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
@@ -53,6 +54,8 @@
         </xsl:element>
     </xsl:template>
     
+    <!-- get a n-2 to make it div
+         the n - 1 is matched here too because a p tag must be in a div tag -->
     <xsl:template match="node[not(node/node)] | node[not(node)]">
         <xsl:element name="div" >
             <xsl:element name="h6" >
@@ -63,6 +66,7 @@
         <xsl:apply-templates/>
     </xsl:template>
     
+    <!-- to avoid div between sect list -->
     <xsl:template match="node[not(node/node) and (preceding-sibling::node/node/node or  following-sibling::node/node/node)]" priority="5">
         <xsl:element name="section">
             <xsl:attribute name="data-hdoc-type">unit-of-content</xsl:attribute>
@@ -74,6 +78,7 @@
         </xsl:element>
     </xsl:template>
 
+<!-- it does not manage html freemind tag -->
 <xsl:template match="richcontent"/>
         
 </xsl:stylesheet>
