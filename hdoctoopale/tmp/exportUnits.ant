@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="copy-ucs" default="main" xmlns:h="http://www.utc.fr/ics/hdoc/xhtml" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3">
+<taskdef name="jing" classname="com.thaiopensource.relaxng.util.JingTask">
+<classpath>
+<pathelement location="lib/jing.jar"/>
+</classpath>
+</taskdef>
+<property file="global.properties"/>
+<target name="main">
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-1-limites-de-poids-par-essieu-(pourquoi-une-limitation--).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-1-limites-de-poids-par-essieu-(pourquoi-une-limitation--)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-1-limites-de-poids-par-essieu-(pourquoi-une-limitation--).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-2-pourquoi-elle-existe.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-2-pourquoi-elle-existe"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-2-pourquoi-elle-existe.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-3-difference-essieu-a-lame/pneumatique.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-3-difference-essieu-a-lame/pneumatique"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-3-difference-essieu-a-lame/pneumatique.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-4-untitled.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-4-untitled"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-4-untitled.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-5-untitled.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-5-untitled"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-5-untitled.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-5-depassements-du-chargement.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-5-depassements-du-chargement"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-5-depassements-du-chargement.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-6-consequences-d’une-repartition-incorrecte.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-6-consequences-d’une-repartition-incorrecte"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-6-consequences-d’une-repartition-incorrecte.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-7-code-de-la-route-et-arrimage.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-7-code-de-la-route-et-arrimage"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-7-code-de-la-route-et-arrimage.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-8-forces-d’inertie.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-8-forces-d’inertie"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-8-forces-d’inertie.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-9-energie-cinetique.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-9-energie-cinetique"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-9-energie-cinetique.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-10-force-centrifuge.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-10-force-centrifuge"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-10-force-centrifuge.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-11-force-de-frottement.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-11-force-de-frottement"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-11-force-de-frottement.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-12-transfert-de-charge-et-force-d’arrimage.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-12-transfert-de-charge-et-force-d’arrimage"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-12-transfert-de-charge-et-force-d’arrimage.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-13-les-normes.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-13-les-normes"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-13-les-normes.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-14-sangles--tendeurs.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-14-sangles--tendeurs"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-14-sangles--tendeurs.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-15-tapis-anti-glisse.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-15-tapis-anti-glisse"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-15-tapis-anti-glisse.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-16-coins-de-protection.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-16-coins-de-protection"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-16-coins-de-protection.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-17-cales.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-17-cales"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-17-cales.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-18-filets-ou-baches.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-18-filets-ou-baches"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-18-filets-ou-baches.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-19-chaînes.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-19-chaînes"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-19-chaînes.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-20-untitled.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-20-untitled"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-20-untitled.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-20-arrimage-de-securite.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-20-arrimage-de-securite"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-20-arrimage-de-securite.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-21-arrimage-de-force.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-21-arrimage-de-force"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-21-arrimage-de-force.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-22-arrimage-diagonal.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-22-arrimage-diagonal"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-22-arrimage-diagonal.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-23-arrimage-en-boucle.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-23-arrimage-en-boucle"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-23-arrimage-en-boucle.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-24-arrimage-anti-rebond.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-24-arrimage-anti-rebond"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-24-arrimage-anti-rebond.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-25-arrimage-combine.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-25-arrimage-combine"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-25-arrimage-combine.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-26-plaquette-pour-determiner-les-angles.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-26-plaquette-pour-determiner-les-angles"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-26-plaquette-pour-determiner-les-angles.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-27-disque-pour-determiner-le-nombre-de-sangles.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-27-disque-pour-determiner-le-nombre-de-sangles"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-27-disque-pour-determiner-le-nombre-de-sangles.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-28-formules-pour-un-arrimage-de-force.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-28-formules-pour-un-arrimage-de-force"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-28-formules-pour-un-arrimage-de-force.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-29-formules-pour-un-arrimage-de-force-et-de-securite.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-29-formules-pour-un-arrimage-de-force-et-de-securite"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-29-formules-pour-un-arrimage-de-force-et-de-securite.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-30-tableau-comparatif.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-30-tableau-comparatif"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-30-tableau-comparatif.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-31-specificites-frigo.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-31-specificites-frigo"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-31-specificites-frigo.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-32-largeur--longueur--hauteur.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-32-largeur--longueur--hauteur"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-32-largeur--longueur--hauteur.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-33-pv-ptac-ptra-mma-cu-poids-reel.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-33-pv-ptac-ptra-mma-cu-poids-reel"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-33-pv-ptac-ptra-mma-cu-poids-reel.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-34-surcharges-sanctions-encourues.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-34-surcharges-sanctions-encourues"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-34-surcharges-sanctions-encourues.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-35-code-de-bonnes-pratiques-europeen-arrimage-pdf.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-35-code-de-bonnes-pratiques-europeen-arrimage-pdf"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-35-code-de-bonnes-pratiques-europeen-arrimage-pdf.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-36-port-des-epi.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-36-port-des-epi"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-36-port-des-epi.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-37-risques-lies-aux-operations-d’arrimage.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-37-risques-lies-aux-operations-d’arrimage"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-37-risques-lies-aux-operations-d’arrimage.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-38-avant-chargement.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-38-avant-chargement"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-38-avant-chargement.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-39-pendant-chargement.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-39-pendant-chargement"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-39-pendant-chargement.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-40-verification-de-l'arrimage-pendant-le-transport.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-40-verification-de-l'arrimage-pendant-le-transport"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-40-verification-de-l'arrimage-pendant-le-transport.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-41-precautions-au-dechargement.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-41-precautions-au-dechargement"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-41-precautions-au-dechargement.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-42-chargement-bien-arrime-(selon-criteres-examen-tp).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-42-chargement-bien-arrime-(selon-criteres-examen-tp)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-42-chargement-bien-arrime-(selon-criteres-examen-tp).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-43-utilisation-d'un-hayon-elevateur.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-43-utilisation-d'un-hayon-elevateur"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-43-utilisation-d'un-hayon-elevateur.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-44-utilisation-d'un-transpalette.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-44-utilisation-d'un-transpalette"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-44-utilisation-d'un-transpalette.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-45-attelage/detelage.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-45-attelage/detelage"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-45-attelage/detelage.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-46-verifications.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-46-verifications"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-46-verifications.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-47-bascule-de-la-cabine-(entretien-).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-47-bascule-de-la-cabine-(entretien-)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-47-bascule-de-la-cabine-(entretien-).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-48-convois-exceptionnels.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-48-convois-exceptionnels"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-48-convois-exceptionnels.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-49-comment-ça-fonctionne--.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-49-comment-ça-fonctionne--"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-49-comment-ça-fonctionne--.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-50-contexte-reglementaire.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-50-contexte-reglementaire"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-50-contexte-reglementaire.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-51-transport-a-temperature-dirigee.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-51-transport-a-temperature-dirigee"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-51-transport-a-temperature-dirigee.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-52-tmd.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-52-tmd"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-52-tmd.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-53-côte-patronal.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-53-côte-patronal"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-53-côte-patronal.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-54-côte-salarial.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-54-côte-salarial"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-54-côte-salarial.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-55-syndicats.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-55-syndicats"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-55-syndicats.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-56-branches.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-56-branches"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-56-branches.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-57-conventions-collectives.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-57-conventions-collectives"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-57-conventions-collectives.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-58-specificites-par-branche-d'activites-(exemple-dechet).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-58-specificites-par-branche-d'activites-(exemple-dechet)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-58-specificites-par-branche-d'activites-(exemple-dechet).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-59-rse.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-59-rse"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-59-rse.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-60-temps-de-service-et-amplitude.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-60-temps-de-service-et-amplitude"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-60-temps-de-service-et-amplitude.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-61-obligation-d'informer.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-61-obligation-d'informer"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-61-obligation-d'informer.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-62-respect-du-repos-compensateur-etc-.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-62-respect-du-repos-compensateur-etc-"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-62-respect-du-repos-compensateur-etc-.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-63-de-laisser-libre-cours-aux-contrôles.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-63-de-laisser-libre-cours-aux-contrôles"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-63-de-laisser-libre-cours-aux-contrôles.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-64-de-tenir-a-jour-les-appareils-de-contrôle-(temperature--chrono-).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-64-de-tenir-a-jour-les-appareils-de-contrôle-(temperature--chrono-)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-64-de-tenir-a-jour-les-appareils-de-contrôle-(temperature--chrono-).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-65-sanctionner-les-abus.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-65-sanctionner-les-abus"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-65-sanctionner-les-abus.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-66-conserver-des-donnees.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-66-conserver-des-donnees"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-66-conserver-des-donnees.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-67-organisation-de-la-paie-(temps-de-service)-et-des-repos-compensateurs.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-67-organisation-de-la-paie-(temps-de-service)-et-des-repos-compensateurs"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-67-organisation-de-la-paie-(temps-de-service)-et-des-repos-compensateurs.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-68-specificites-frigo.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-68-specificites-frigo"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-68-specificites-frigo.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-69-specificites-certains-transports-(lait-).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-69-specificites-certains-transports-(lait-)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-69-specificites-certains-transports-(lait-).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-70-feries.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-70-feries"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-70-feries.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-71-semaine.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-71-semaine"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-71-semaine.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-72-week-end.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-72-week-end"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-72-week-end.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-73-presentation.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-73-presentation"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-73-presentation.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-74-chronotachygraphe-analogique.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-74-chronotachygraphe-analogique"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-74-chronotachygraphe-analogique.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-75-chronotachygraphe-numerique.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-75-chronotachygraphe-numerique"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-75-chronotachygraphe-numerique.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-76-utilisation.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-76-utilisation"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-76-utilisation.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-77-en-cas-de-panne.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-77-en-cas-de-panne"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-77-en-cas-de-panne.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-78-conducteur.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-78-conducteur"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-78-conducteur.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-79-entreprise.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-79-entreprise"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-79-entreprise.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-80-obligations-du-conducteur.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-80-obligations-du-conducteur"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-80-obligations-du-conducteur.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-81-obligations-de-l'employeur.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-81-obligations-de-l'employeur"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-81-obligations-de-l'employeur.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-82-notion-de-contrat-tri-partie-(voiturier--expediteur--celui-qui-receptionne-retrouver-le-nom).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-82-notion-de-contrat-tri-partie-(voiturier--expediteur--celui-qui-receptionne-retrouver-le-nom)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-82-notion-de-contrat-tri-partie-(voiturier--expediteur--celui-qui-receptionne-retrouver-le-nom).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-83-notion-de-donneur-d'ordre.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-83-notion-de-donneur-d'ordre"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-83-notion-de-donneur-d'ordre.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-84-ordre-de-mission-etc-.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-84-ordre-de-mission-etc-"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-84-ordre-de-mission-etc-.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-85-contrat-commercial-libre-de-toute-clause-(ni-illegales-ni-leonines).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-85-contrat-commercial-libre-de-toute-clause-(ni-illegales-ni-leonines)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-85-contrat-commercial-libre-de-toute-clause-(ni-illegales-ni-leonines).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-86-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-86-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-86-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-87-regles-du-contrat-type.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-87-regles-du-contrat-type"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-87-regles-du-contrat-type.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-88-regles-d'hygiene.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-88-regles-d'hygiene"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-88-regles-d'hygiene.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-89-regles-haccp.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-89-regles-haccp"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-89-regles-haccp.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-90-chaîne-du-froid-(contrôle-temperature).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-90-chaîne-du-froid-(contrôle-temperature)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-90-chaîne-du-froid-(contrôle-temperature).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-91-categories-de-marchandises.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-91-categories-de-marchandises"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-91-categories-de-marchandises.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-92-isotherme.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-92-isotherme"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-92-isotherme.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-93-refrigeree.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-93-refrigeree"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-93-refrigeree.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-94-frigorifique.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-94-frigorifique"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-94-frigorifique.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-95-groupage/colisage.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-95-groupage/colisage"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-95-groupage/colisage.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-96-notion-de-contrat-bi-ou-mono-partie-ou-activite-de-transport-accessoire.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-96-notion-de-contrat-bi-ou-mono-partie-ou-activite-de-transport-accessoire"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-96-notion-de-contrat-bi-ou-mono-partie-ou-activite-de-transport-accessoire.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-97-notion-de-donneur-d'ordre-responsable-de-l'entreprise-(et-plus-une-tierce-personne-comme-dans-le-transport-public).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-97-notion-de-donneur-d'ordre-responsable-de-l'entreprise-(et-plus-une-tierce-personne-comme-dans-le-transport-public)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-97-notion-de-donneur-d'ordre-responsable-de-l'entreprise-(et-plus-une-tierce-personne-comme-dans-le-transport-public).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-98-ordre-de-mission-etc-.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-98-ordre-de-mission-etc-"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-98-ordre-de-mission-etc-.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-98-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception)-limites-du-transport-prive-(quand-bascule-t-on-du-public-au-prive-et-inversement--exemples).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-98-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception)-limites-du-transport-prive-(quand-bascule-t-on-du-public-au-prive-et-inversement--exemples)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-98-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception)-limites-du-transport-prive-(quand-bascule-t-on-du-public-au-prive-et-inversement--exemples).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-99-regles-d'hygiene-(idem-que-public).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-99-regles-d'hygiene-(idem-que-public)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-99-regles-d'hygiene-(idem-que-public).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-100-regles-haccp-idem.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-100-regles-haccp-idem"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-100-regles-haccp-idem.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-101-chaîne-du-froid-(contrôle-temperature)-idem.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-101-chaîne-du-froid-(contrôle-temperature)-idem"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-101-chaîne-du-froid-(contrôle-temperature)-idem.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-102-categories-de-marchandises.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-102-categories-de-marchandises"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-102-categories-de-marchandises.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-102-isotherme.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-102-isotherme"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-102-isotherme.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-102-refrigeree.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-102-refrigeree"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-102-refrigeree.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-102-frigorifique.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-102-frigorifique"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-102-frigorifique.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-102-lettre-de-voiture-detaillee-(case/case)--exemples-de-redaction.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-102-lettre-de-voiture-detaillee-(case/case)--exemples-de-redaction"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-102-lettre-de-voiture-detaillee-(case/case)--exemples-de-redaction.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-103-les-specificites-des-etrangers-en-france-regles-de-cabotage.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-103-les-specificites-des-etrangers-en-france-regles-de-cabotage"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-103-les-specificites-des-etrangers-en-france-regles-de-cabotage.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-104-les-autorisations-de-circuler-en-europe-communautaire.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-104-les-autorisations-de-circuler-en-europe-communautaire"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-104-les-autorisations-de-circuler-en-europe-communautaire.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-105-les-autorisations-de-circuler-hors-europe-communautaire.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-105-les-autorisations-de-circuler-hors-europe-communautaire"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-105-les-autorisations-de-circuler-hors-europe-communautaire.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-106-tir.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-106-tir"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-106-tir.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-107-accords-bilateraux.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-107-accords-bilateraux"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-107-accords-bilateraux.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-108-ecotaxe.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-108-ecotaxe"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-108-ecotaxe.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-109-en-allemagne-(lkw-maut).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-109-en-allemagne-(lkw-maut)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-109-en-allemagne-(lkw-maut).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-110-en-suisse-la-rplp-(redevance-sur-le-trafic-des-poids-lourds-liee-aux-prestations).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-110-en-suisse-la-rplp-(redevance-sur-le-trafic-des-poids-lourds-liee-aux-prestations)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-110-en-suisse-la-rplp-(redevance-sur-le-trafic-des-poids-lourds-liee-aux-prestations).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-111-autres-pays.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-111-autres-pays"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-111-autres-pays.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-112-en-prive-contrat-de-transport-non--cabotage-non-.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-112-en-prive-contrat-de-transport-non--cabotage-non-"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-112-en-prive-contrat-de-transport-non--cabotage-non-.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-113-en-france/a-l'international.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-113-en-france/a-l'international"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-113-en-france/a-l'international.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-114-acquis-a-caution.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-114-acquis-a-caution"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-114-acquis-a-caution.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-115-document-veterinaire.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-115-document-veterinaire"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-115-document-veterinaire.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-116-etc-.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-116-etc-"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-116-etc-.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-117-en-france.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-117-en-france"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-117-en-france.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-118-a-l'international.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-118-a-l'international"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-118-a-l'international.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-119-en-france.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-119-en-france"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-119-en-france.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-120-a-l'international.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-120-a-l'international"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-120-a-l'international.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-120-cas-de-transport-(exercices-avec-correction).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-120-cas-de-transport-(exercices-avec-correction)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-120-cas-de-transport-(exercices-avec-correction).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-121-reglementation-transport-(contrat-type).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-121-reglementation-transport-(contrat-type)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-121-reglementation-transport-(contrat-type).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-122-responsabilites.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-122-responsabilites"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-122-responsabilites.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-123-untitled.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-123-untitled"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-123-untitled.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-123-manoeuvres.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-123-manoeuvres"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-123-manoeuvres.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-124-angles-morts-d'un-car.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-124-angles-morts-d'un-car"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-124-angles-morts-d'un-car.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-125-porte-a-faux.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-125-porte-a-faux"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-125-porte-a-faux.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-126-de-par-les-marchandises-transportees.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-126-de-par-les-marchandises-transportees"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-126-de-par-les-marchandises-transportees.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-127-accident.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-127-accident"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-127-accident.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-128-incendie.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-128-incendie"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-128-incendie.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-129-faire-face-a-une-situation-a-risque.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-129-faire-face-a-une-situation-a-risque"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-129-faire-face-a-une-situation-a-risque.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-130-limitations-de-vitesse-des-vehicules-de-trm.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-130-limitations-de-vitesse-des-vehicules-de-trm"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-130-limitations-de-vitesse-des-vehicules-de-trm.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-131-signalisation-specifiques-aux-vehicules-de-transport-routier-de-marchandises.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-131-signalisation-specifiques-aux-vehicules-de-transport-routier-de-marchandises"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-131-signalisation-specifiques-aux-vehicules-de-transport-routier-de-marchandises.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-132-untitled.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-132-untitled"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-132-untitled.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-132-untitled.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-132-untitled"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-132-untitled.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-132-rond-point.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-132-rond-point"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-132-rond-point.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-133-ouvrages-d'art.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-133-ouvrages-d'art"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-133-ouvrages-d'art.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-134-accidents-de-travail-dans-le-trm.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-134-accidents-de-travail-dans-le-trm"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-134-accidents-de-travail-dans-le-trm.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-135-remplir-un-constat-(scenario-d'accident-impliquant-le-vehicule-de-trm).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-135-remplir-un-constat-(scenario-d'accident-impliquant-le-vehicule-de-trm)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-135-remplir-un-constat-(scenario-d'accident-impliquant-le-vehicule-de-trm).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-136-agression-contre-les-conducteurs.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-136-agression-contre-les-conducteurs"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-136-agression-contre-les-conducteurs.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-137-vols-de-marchandises.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-137-vols-de-marchandises"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-137-vols-de-marchandises.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-138-prevention-des-risques.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-138-prevention-des-risques"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-138-prevention-des-risques.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-139-les-commissionnaires-de-transport.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-139-les-commissionnaires-de-transport"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-139-les-commissionnaires-de-transport.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-140-la-logistique-urbaine-et-la-livraison-en-ville.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-140-la-logistique-urbaine-et-la-livraison-en-ville"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-140-la-logistique-urbaine-et-la-livraison-en-ville.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-141-etat-des-lieux-(donnees-chiffrees)-et-evolution-(hub-de-stockage--hub-de-transport).xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-141-etat-des-lieux-(donnees-chiffrees)-et-evolution-(hub-de-stockage--hub-de-transport)"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-141-etat-des-lieux-(donnees-chiffrees)-et-evolution-(hub-de-stockage--hub-de-transport).xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-142-environnement-logistique.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-142-environnement-logistique"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-142-environnement-logistique.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-143-ferroutage.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-143-ferroutage"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-143-ferroutage.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-144-fluvial.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-144-fluvial"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-144-fluvial.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-145-combine.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-145-combine"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-145-combine.xml" rngfile="schema/op_expUc.rng"/>
+<xslt in="${tmpdir}/outputWithCourseUcIds.xml" out="${tmpdir}/decompressedOpaleDivided/unit-146-problemes-de-concurrence-internationale.xml" style="copyCourseUc.xsl" processor="org.apache.tools.ant.taskdefs.optional.TraXLiaison">
+<param name="elementid" expression="uoc-146-problemes-de-concurrence-internationale"/>
+</xslt>
+<jing file="${tmpdir}/decompressedOpaleDivided/unit-146-problemes-de-concurrence-internationale.xml" rngfile="schema/op_expUc.rng"/>
+</target>
+</project>

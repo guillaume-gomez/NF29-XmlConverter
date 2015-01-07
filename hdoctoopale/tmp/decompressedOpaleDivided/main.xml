@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?><sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:h="http://www.utc.fr/ics/hdoc/xhtml" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3">
+<op:ue>
+<op:ueM>
+<sp:title>Marchandises</sp:title>
+<sp:info>
+<op:info>
+<sp:cpyrgt>
+<op:sPara>
+<sc:para/>
+</op:sPara>
+</sp:cpyrgt>
+</op:info>
+</sp:info>
+</op:ueM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Marchandises</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Thème 1 : Perfectionnement à la conduite rationnelle axée sur les règles de sécurité</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>les caractéristiques techniques du véhicule et le fonctionnement des organes de sécurité</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Chassis</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-1-limites-de-poids-par-essieu-(pourquoi-une-limitation--).xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Taxe à l'essieu</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-2-pourquoi-elle-existe.xml"/>
+<sp:courseUc sc:refUri="unit-3-difference-essieu-a-lame/pneumatique.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>le chargement, l'arrimage, la manutention des marchandises dans le respect des consignes de sécurité et la bonne utilisation du véhicule</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Chargement</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-4-untitled.xml"/>
+<sp:courseUc sc:refUri="unit-5-untitled.xml"/>
+<sp:courseUc sc:refUri="unit-5-depassements-du-chargement.xml"/>
+<sp:courseUc sc:refUri="unit-6-consequences-d’une-repartition-incorrecte.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réglementation Arrimage</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-7-code-de-la-route-et-arrimage.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Arrimage</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Forces</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-8-forces-d’inertie.xml"/>
+<sp:courseUc sc:refUri="unit-9-energie-cinetique.xml"/>
+<sp:courseUc sc:refUri="unit-10-force-centrifuge.xml"/>
+<sp:courseUc sc:refUri="unit-11-force-de-frottement.xml"/>
+<sp:courseUc sc:refUri="unit-12-transfert-de-charge-et-force-d’arrimage.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Matériels</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-13-les-normes.xml"/>
+<sp:courseUc sc:refUri="unit-14-sangles--tendeurs.xml"/>
+<sp:courseUc sc:refUri="unit-15-tapis-anti-glisse.xml"/>
+<sp:courseUc sc:refUri="unit-16-coins-de-protection.xml"/>
+<sp:courseUc sc:refUri="unit-17-cales.xml"/>
+<sp:courseUc sc:refUri="unit-18-filets-ou-baches.xml"/>
+<sp:courseUc sc:refUri="unit-19-chaînes.xml"/>
+<sp:courseUc sc:refUri="unit-20-untitled.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Méthodes</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-20-arrimage-de-securite.xml"/>
+<sp:courseUc sc:refUri="unit-21-arrimage-de-force.xml"/>
+<sp:courseUc sc:refUri="unit-22-arrimage-diagonal.xml"/>
+<sp:courseUc sc:refUri="unit-23-arrimage-en-boucle.xml"/>
+<sp:courseUc sc:refUri="unit-24-arrimage-anti-rebond.xml"/>
+<sp:courseUc sc:refUri="unit-25-arrimage-combine.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Calculs</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-26-plaquette-pour-determiner-les-angles.xml"/>
+<sp:courseUc sc:refUri="unit-27-disque-pour-determiner-le-nombre-de-sangles.xml"/>
+<sp:courseUc sc:refUri="unit-28-formules-pour-un-arrimage-de-force.xml"/>
+<sp:courseUc sc:refUri="unit-29-formules-pour-un-arrimage-de-force-et-de-securite.xml"/>
+<sp:courseUc sc:refUri="unit-30-tableau-comparatif.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Véhicule</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Différents types de véhicules</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-31-specificites-frigo.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-32-largeur--longueur--hauteur.xml"/>
+<sp:courseUc sc:refUri="unit-33-pv-ptac-ptra-mma-cu-poids-reel.xml"/>
+<sp:courseUc sc:refUri="unit-34-surcharges-sanctions-encourues.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Textes</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-35-code-de-bonnes-pratiques-europeen-arrimage-pdf.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Consignes de sécurité</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-36-port-des-epi.xml"/>
+<sp:courseUc sc:refUri="unit-37-risques-lies-aux-operations-d’arrimage.xml"/>
+<sp:courseUc sc:refUri="unit-38-avant-chargement.xml"/>
+<sp:courseUc sc:refUri="unit-39-pendant-chargement.xml"/>
+<sp:courseUc sc:refUri="unit-40-verification-de-l'arrimage-pendant-le-transport.xml"/>
+<sp:courseUc sc:refUri="unit-41-precautions-au-dechargement.xml"/>
+<sp:courseUc sc:refUri="unit-42-chargement-bien-arrime-(selon-criteres-examen-tp).xml"/>
+<sp:courseUc sc:refUri="unit-43-utilisation-d'un-hayon-elevateur.xml"/>
+<sp:courseUc sc:refUri="unit-44-utilisation-d'un-transpalette.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-45-attelage/detelage.xml"/>
+<sp:courseUc sc:refUri="unit-46-verifications.xml"/>
+<sp:courseUc sc:refUri="unit-47-bascule-de-la-cabine-(entretien-).xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Différents types de transport (véhicules, réglementation, marchandises transportées, organisation des transports)</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-48-convois-exceptionnels.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Transport combiné </sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-49-comment-ça-fonctionne--.xml"/>
+<sp:courseUc sc:refUri="unit-50-contexte-reglementaire.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-51-transport-a-temperature-dirigee.xml"/>
+<sp:courseUc sc:refUri="unit-52-tmd.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Thème 2 : Application des réglementations</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Accès la profession</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Organisation de la profession</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-53-côte-patronal.xml"/>
+<sp:courseUc sc:refUri="unit-54-côte-salarial.xml"/>
+<sp:courseUc sc:refUri="unit-55-syndicats.xml"/>
+<sp:courseUc sc:refUri="unit-56-branches.xml"/>
+<sp:courseUc sc:refUri="unit-57-conventions-collectives.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Devenir conducteur routier</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-58-specificites-par-branche-d'activites-(exemple-dechet).xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>J'organise le temps de travail</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Côté conducteur</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-59-rse.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réglementation française</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-60-temps-de-service-et-amplitude.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Côté transporteur</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Faire respecter cette réglementation</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-61-obligation-d'informer.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>De contrôler l'activité, le temps de travail (sans le chronotachygraphe), conservation des données</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-62-respect-du-repos-compensateur-etc-.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-63-de-laisser-libre-cours-aux-contrôles.xml"/>
+<sp:courseUc sc:refUri="unit-64-de-tenir-a-jour-les-appareils-de-contrôle-(temperature--chrono-).xml"/>
+<sp:courseUc sc:refUri="unit-65-sanctionner-les-abus.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-66-conserver-des-donnees.xml"/>
+<sp:courseUc sc:refUri="unit-67-organisation-de-la-paie-(temps-de-service)-et-des-repos-compensateurs.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Semaine de travail du conducteur routier</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-68-specificites-frigo.xml"/>
+<sp:courseUc sc:refUri="unit-69-specificites-certains-transports-(lait-).xml"/>
+<sp:courseUc sc:refUri="unit-70-feries.xml"/>
+<sp:courseUc sc:refUri="unit-71-semaine.xml"/>
+<sp:courseUc sc:refUri="unit-72-week-end.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Je contrôle l'application des réglementations de temps de travail et de repos</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Chronotachygraphe (rapatriement des données)</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-73-presentation.xml"/>
+<sp:courseUc sc:refUri="unit-74-chronotachygraphe-analogique.xml"/>
+<sp:courseUc sc:refUri="unit-75-chronotachygraphe-numerique.xml"/>
+<sp:courseUc sc:refUri="unit-76-utilisation.xml"/>
+<sp:courseUc sc:refUri="unit-77-en-cas-de-panne.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Contrôles sur route</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Sanctions</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-78-conducteur.xml"/>
+<sp:courseUc sc:refUri="unit-79-entreprise.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-80-obligations-du-conducteur.xml"/>
+<sp:courseUc sc:refUri="unit-81-obligations-de-l'employeur.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réaliser un transport</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Le transport public </sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-82-notion-de-contrat-tri-partie-(voiturier--expediteur--celui-qui-receptionne-retrouver-le-nom).xml"/>
+<sp:courseUc sc:refUri="unit-83-notion-de-donneur-d'ordre.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Obligations contractuelles minimales</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-84-ordre-de-mission-etc-.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Constitution d'un contrat de transport</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-85-contrat-commercial-libre-de-toute-clause-(ni-illegales-ni-leonines).xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-86-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception).xml"/>
+<sp:courseUc sc:refUri="unit-87-regles-du-contrat-type.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Spécificités du transport sous température dirigée</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-88-regles-d'hygiene.xml"/>
+<sp:courseUc sc:refUri="unit-89-regles-haccp.xml"/>
+<sp:courseUc sc:refUri="unit-90-chaîne-du-froid-(contrôle-temperature).xml"/>
+<sp:courseUc sc:refUri="unit-91-categories-de-marchandises.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Catégories de transport sous température dirigée</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-92-isotherme.xml"/>
+<sp:courseUc sc:refUri="unit-93-refrigeree.xml"/>
+<sp:courseUc sc:refUri="unit-94-frigorifique.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-95-groupage/colisage.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Transport privé (comment prouver origine de la marchandise)</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-96-notion-de-contrat-bi-ou-mono-partie-ou-activite-de-transport-accessoire.xml"/>
+<sp:courseUc sc:refUri="unit-97-notion-de-donneur-d'ordre-responsable-de-l'entreprise-(et-plus-une-tierce-personne-comme-dans-le-transport-public).xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Obligations contractuelles minimales = origine de la marchandise</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-98-ordre-de-mission-etc-.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-98-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception)-limites-du-transport-prive-(quand-bascule-t-on-du-public-au-prive-et-inversement--exemples).xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Spécificités du transport sous température dirigée</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-99-regles-d'hygiene-(idem-que-public).xml"/>
+<sp:courseUc sc:refUri="unit-100-regles-haccp-idem.xml"/>
+<sp:courseUc sc:refUri="unit-101-chaîne-du-froid-(contrôle-temperature)-idem.xml"/>
+<sp:courseUc sc:refUri="unit-102-categories-de-marchandises.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Catégories de transport sous température dirigée</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-102-isotherme.xml"/>
+<sp:courseUc sc:refUri="unit-102-refrigeree.xml"/>
+<sp:courseUc sc:refUri="unit-102-frigorifique.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réaliser un transport à l'international</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Le contrat de transport international (CMR)</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-102-lettre-de-voiture-detaillee-(case/case)--exemples-de-redaction.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-103-les-specificites-des-etrangers-en-france-regles-de-cabotage.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Autorisations de circuler</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-104-les-autorisations-de-circuler-en-europe-communautaire.xml"/>
+<sp:courseUc sc:refUri="unit-105-les-autorisations-de-circuler-hors-europe-communautaire.xml"/>
+<sp:courseUc sc:refUri="unit-106-tir.xml"/>
+<sp:courseUc sc:refUri="unit-107-accords-bilateraux.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Taxes de circulation</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-108-ecotaxe.xml"/>
+<sp:courseUc sc:refUri="unit-109-en-allemagne-(lkw-maut).xml"/>
+<sp:courseUc sc:refUri="unit-110-en-suisse-la-rplp-(redevance-sur-le-trafic-des-poids-lourds-liee-aux-prestations).xml"/>
+<sp:courseUc sc:refUri="unit-111-autres-pays.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Spécificités du privé</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-112-en-prive-contrat-de-transport-non--cabotage-non-.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Documents d'accompagnement </sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>de la marchandise </sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-113-en-france/a-l'international.xml"/>
+<sp:courseUc sc:refUri="unit-114-acquis-a-caution.xml"/>
+<sp:courseUc sc:refUri="unit-115-document-veterinaire.xml"/>
+<sp:courseUc sc:refUri="unit-116-etc-.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>du véhicule</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-117-en-france.xml"/>
+<sp:courseUc sc:refUri="unit-118-a-l'international.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>du conducteur</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-119-en-france.xml"/>
+<sp:courseUc sc:refUri="unit-120-a-l'international.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-120-cas-de-transport-(exercices-avec-correction).xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réglementation Arrimage</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-121-reglementation-transport-(contrat-type).xml"/>
+<sp:courseUc sc:refUri="unit-122-responsabilites.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-123-untitled.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Thème 3 : Santé, sécurité routière et environnementale</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>la conduite préventive et l'évaluation des situations d'urgence notamment à travers des exercices pratiques et études de cas permettant une approche pragmatique et efficace des situations à risques</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Exemples concrets de situations à risque</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>De par le véhicule</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-123-manoeuvres.xml"/>
+<sp:courseUc sc:refUri="unit-124-angles-morts-d'un-car.xml"/>
+<sp:courseUc sc:refUri="unit-125-porte-a-faux.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-126-de-par-les-marchandises-transportees.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Situations urgentes</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-127-accident.xml"/>
+<sp:courseUc sc:refUri="unit-128-incendie.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-129-faire-face-a-une-situation-a-risque.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>les règles de circulation et de signalisation routières</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-130-limitations-de-vitesse-des-vehicules-de-trm.xml"/>
+<sp:courseUc sc:refUri="unit-131-signalisation-specifiques-aux-vehicules-de-transport-routier-de-marchandises.xml"/>
+<sp:courseUc sc:refUri="unit-132-untitled.xml"/>
+<sp:courseUc sc:refUri="unit-132-untitled.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Utilisation d’infrastructures particulières </sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-132-rond-point.xml"/>
+<sp:courseUc sc:refUri="unit-133-ouvrages-d'art.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>les accidents du travail en circulation et à l'arrêt</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-134-accidents-de-travail-dans-le-trm.xml"/>
+<sp:courseUc sc:refUri="unit-135-remplir-un-constat-(scenario-d'accident-impliquant-le-vehicule-de-trm).xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>la criminalité et le trafic des clandestins</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Criminalité dans le TRM</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-136-agression-contre-les-conducteurs.xml"/>
+<sp:courseUc sc:refUri="unit-137-vols-de-marchandises.xml"/>
+<sp:courseUc sc:refUri="unit-138-prevention-des-risques.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Thème 4 : Service, logistique propres au transport de marchandises </sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>l'environnement économique du transport routier de marchandises et l'organisation du marché</sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-139-les-commissionnaires-de-transport.xml"/>
+<sp:courseUc sc:refUri="unit-140-la-logistique-urbaine-et-la-livraison-en-ville.xml"/>
+<sp:courseUc sc:refUri="unit-141-etat-des-lieux-(donnees-chiffrees)-et-evolution-(hub-de-stockage--hub-de-transport).xml"/>
+<sp:courseUc sc:refUri="unit-142-environnement-logistique.xml"/>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Autres modes de transport </sp:title>
+</op:ueDivM>
+<sp:courseUc sc:refUri="unit-143-ferroutage.xml"/>
+<sp:courseUc sc:refUri="unit-144-fluvial.xml"/>
+<sp:courseUc sc:refUri="unit-145-combine.xml"/>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc sc:refUri="unit-146-problemes-de-concurrence-internationale.xml"/>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ue>
+</sc:item>

@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8"?><sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:h="http://www.utc.fr/ics/hdoc/xhtml" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3">
+<op:ue>
+<op:ueM>
+<sp:title>Marchandises</sp:title>
+<sp:info>
+<op:info>
+<sp:cpyrgt>
+<op:sPara>
+<sc:para/>
+</op:sPara>
+</sp:cpyrgt>
+</op:info>
+</sp:info>
+</op:ueM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Marchandises</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Thème 1 : Perfectionnement à la conduite rationnelle axée sur les règles de sécurité</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>les caractéristiques techniques du véhicule et le fonctionnement des organes de sécurité</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Chassis</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-1-limites-de-poids-par-essieu-(pourquoi-une-limitation--)" data-export-file="unit-1-limites-de-poids-par-essieu-(pourquoi-une-limitation--).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Limites de poids par essieu (pourquoi une limitation ?)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Taxe à l'essieu</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-2-pourquoi-elle-existe" data-export-file="unit-2-pourquoi-elle-existe.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Pourquoi elle existe</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-3-difference-essieu-a-lame/pneumatique" data-export-file="unit-3-difference-essieu-a-lame/pneumatique.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Différence essieu à lame/pneumatique</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>le chargement, l'arrimage, la manutention des marchandises dans le respect des consignes de sécurité et la bonne utilisation du véhicule</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Chargement</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-4-untitled" data-export-file="unit-4-untitled.xml">
+<op:expUc>
+<op:uM>
+<sp:title>
+                Untitled
+              </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-5-untitled" data-export-file="unit-5-untitled.xml">
+<op:expUc>
+<op:uM>
+<sp:title>
+                Untitled
+              </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-5-depassements-du-chargement" data-export-file="unit-5-depassements-du-chargement.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Dépassements du chargement</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-6-consequences-d’une-repartition-incorrecte" data-export-file="unit-6-consequences-d’une-repartition-incorrecte.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Conséquences d’une répartition incorrecte</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réglementation Arrimage</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-7-code-de-la-route-et-arrimage" data-export-file="unit-7-code-de-la-route-et-arrimage.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Code de la route et arrimage</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Arrimage</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Forces</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-8-forces-d’inertie" data-export-file="unit-8-forces-d’inertie.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Forces d’inertie </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-9-energie-cinetique" data-export-file="unit-9-energie-cinetique.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Energie cinétique</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-10-force-centrifuge" data-export-file="unit-10-force-centrifuge.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Force centrifuge </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-11-force-de-frottement" data-export-file="unit-11-force-de-frottement.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Force de frottement</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-12-transfert-de-charge-et-force-d’arrimage" data-export-file="unit-12-transfert-de-charge-et-force-d’arrimage.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Transfert de charge et force d’arrimage</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Matériels</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-13-les-normes" data-export-file="unit-13-les-normes.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Les normes</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-14-sangles--tendeurs" data-export-file="unit-14-sangles--tendeurs.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Sangles, tendeurs</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-15-tapis-anti-glisse" data-export-file="unit-15-tapis-anti-glisse.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Tapis anti-glisse</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-16-coins-de-protection" data-export-file="unit-16-coins-de-protection.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Coins de protection</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-17-cales" data-export-file="unit-17-cales.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Cales</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-18-filets-ou-baches" data-export-file="unit-18-filets-ou-baches.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Filets ou bâches</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-19-chaînes" data-export-file="unit-19-chaînes.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Chaînes</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-20-untitled" data-export-file="unit-20-untitled.xml">
+<op:expUc>
+<op:uM>
+<sp:title>
+                Untitled
+              </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Méthodes</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-20-arrimage-de-securite" data-export-file="unit-20-arrimage-de-securite.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Arrimage de sécurité</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-21-arrimage-de-force" data-export-file="unit-21-arrimage-de-force.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Arrimage de force</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-22-arrimage-diagonal" data-export-file="unit-22-arrimage-diagonal.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Arrimage diagonal</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-23-arrimage-en-boucle" data-export-file="unit-23-arrimage-en-boucle.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Arrimage en boucle</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-24-arrimage-anti-rebond" data-export-file="unit-24-arrimage-anti-rebond.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Arrimage anti-rebond</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-25-arrimage-combine" data-export-file="unit-25-arrimage-combine.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Arrimage combiné</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Calculs</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-26-plaquette-pour-determiner-les-angles" data-export-file="unit-26-plaquette-pour-determiner-les-angles.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Plaquette pour déterminer les angles</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-27-disque-pour-determiner-le-nombre-de-sangles" data-export-file="unit-27-disque-pour-determiner-le-nombre-de-sangles.xml">
+<op:expUc>
+<op:uM>
+<sp:title> Disque pour déterminer le nombre de sangles</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-28-formules-pour-un-arrimage-de-force" data-export-file="unit-28-formules-pour-un-arrimage-de-force.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Formules pour un arrimage de force</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-29-formules-pour-un-arrimage-de-force-et-de-securite" data-export-file="unit-29-formules-pour-un-arrimage-de-force-et-de-securite.xml">
+<op:expUc>
+<op:uM>
+<sp:title> Formules pour un arrimage de force et de sécurité</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-30-tableau-comparatif" data-export-file="unit-30-tableau-comparatif.xml">
+<op:expUc>
+<op:uM>
+<sp:title> Tableau comparatif</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Véhicule</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Différents types de véhicules</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-31-specificites-frigo" data-export-file="unit-31-specificites-frigo.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Spécificités Frigo</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-32-largeur--longueur--hauteur" data-export-file="unit-32-largeur--longueur--hauteur.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Largeur, longueur, hauteur</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-33-pv-ptac-ptra-mma-cu-poids-reel" data-export-file="unit-33-pv-ptac-ptra-mma-cu-poids-reel.xml">
+<op:expUc>
+<op:uM>
+<sp:title>PV PTAC PTRA MMA CU Poids réel</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-34-surcharges-sanctions-encourues" data-export-file="unit-34-surcharges-sanctions-encourues.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Surcharges sanctions encourues</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Textes</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-35-code-de-bonnes-pratiques-europeen-arrimage-pdf" data-export-file="unit-35-code-de-bonnes-pratiques-europeen-arrimage-pdf.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Code_de bonnes_pratiques_europeen_arrimage.pdf</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Consignes de sécurité</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-36-port-des-epi" data-export-file="unit-36-port-des-epi.xml">
+<op:expUc>
+<op:uM>
+<sp:title> Port des EPI </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-37-risques-lies-aux-operations-d’arrimage" data-export-file="unit-37-risques-lies-aux-operations-d’arrimage.xml">
+<op:expUc>
+<op:uM>
+<sp:title> Risques liés aux opérations d’arrimage  </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-38-avant-chargement" data-export-file="unit-38-avant-chargement.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Avant chargement  </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-39-pendant-chargement" data-export-file="unit-39-pendant-chargement.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Pendant chargement  </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-40-verification-de-l'arrimage-pendant-le-transport" data-export-file="unit-40-verification-de-l'arrimage-pendant-le-transport.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Vérification de l'arrimage pendant le transport</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-41-precautions-au-dechargement" data-export-file="unit-41-precautions-au-dechargement.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Précautions au déchargement </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-42-chargement-bien-arrime-(selon-criteres-examen-tp)" data-export-file="unit-42-chargement-bien-arrime-(selon-criteres-examen-tp).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Chargement bien arrimé (selon critères examen TP)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-43-utilisation-d'un-hayon-elevateur" data-export-file="unit-43-utilisation-d'un-hayon-elevateur.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Utilisation d'un hayon élévateur </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-44-utilisation-d'un-transpalette" data-export-file="unit-44-utilisation-d'un-transpalette.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Utilisation d'un transpalette</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-45-attelage/detelage" data-export-file="unit-45-attelage/detelage.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Attelage/dételage</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-46-verifications" data-export-file="unit-46-verifications.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Vérifications </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-47-bascule-de-la-cabine-(entretien-)" data-export-file="unit-47-bascule-de-la-cabine-(entretien-).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Bascule de la cabine (entretien, ...)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Différents types de transport (véhicules, réglementation, marchandises transportées, organisation des transports)</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-48-convois-exceptionnels" data-export-file="unit-48-convois-exceptionnels.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Convois exceptionnels</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Transport combiné </sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-49-comment-ça-fonctionne--" data-export-file="unit-49-comment-ça-fonctionne--.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Comment ça fonctionne ?</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-50-contexte-reglementaire" data-export-file="unit-50-contexte-reglementaire.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Contexte réglementaire</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-51-transport-a-temperature-dirigee" data-export-file="unit-51-transport-a-temperature-dirigee.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Transport à température dirigée</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-52-tmd" data-export-file="unit-52-tmd.xml">
+<op:expUc>
+<op:uM>
+<sp:title>TMD</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Thème 2 : Application des réglementations</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Accès la profession</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Organisation de la profession</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-53-côte-patronal" data-export-file="unit-53-côte-patronal.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Côté patronal</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-54-côte-salarial" data-export-file="unit-54-côte-salarial.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Côté salarial</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-55-syndicats" data-export-file="unit-55-syndicats.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Syndicats</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-56-branches" data-export-file="unit-56-branches.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Branches</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-57-conventions-collectives" data-export-file="unit-57-conventions-collectives.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Conventions collectives</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Devenir conducteur routier</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-58-specificites-par-branche-d'activites-(exemple-dechet)" data-export-file="unit-58-specificites-par-branche-d'activites-(exemple-dechet).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Spécificités par branche d'activités (exemple déchet)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>J'organise le temps de travail</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Côté conducteur</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-59-rse" data-export-file="unit-59-rse.xml">
+<op:expUc>
+<op:uM>
+<sp:title>RSE</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réglementation française</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-60-temps-de-service-et-amplitude" data-export-file="unit-60-temps-de-service-et-amplitude.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Temps de service et amplitude</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Côté transporteur</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Faire respecter cette réglementation</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-61-obligation-d'informer" data-export-file="unit-61-obligation-d'informer.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Obligation d'informer</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>De contrôler l'activité, le temps de travail (sans le chronotachygraphe), conservation des données</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-62-respect-du-repos-compensateur-etc-" data-export-file="unit-62-respect-du-repos-compensateur-etc-.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Respect du repos compensateur ? etc.</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-63-de-laisser-libre-cours-aux-contrôles" data-export-file="unit-63-de-laisser-libre-cours-aux-contrôles.xml">
+<op:expUc>
+<op:uM>
+<sp:title>De laisser libre cours aux contrôles</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-64-de-tenir-a-jour-les-appareils-de-contrôle-(temperature--chrono-)" data-export-file="unit-64-de-tenir-a-jour-les-appareils-de-contrôle-(temperature--chrono-).xml">
+<op:expUc>
+<op:uM>
+<sp:title>De tenir à jour les appareils de contrôle (température, chrono, ...)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-65-sanctionner-les-abus" data-export-file="unit-65-sanctionner-les-abus.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Sanctionner les abus</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-66-conserver-des-donnees" data-export-file="unit-66-conserver-des-donnees.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Conserver des données</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-67-organisation-de-la-paie-(temps-de-service)-et-des-repos-compensateurs" data-export-file="unit-67-organisation-de-la-paie-(temps-de-service)-et-des-repos-compensateurs.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Organisation de la paie (temps de service) et des repos compensateurs</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Semaine de travail du conducteur routier</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-68-specificites-frigo" data-export-file="unit-68-specificites-frigo.xml">
+<op:expUc>
+<op:uM>
+<sp:title>spécificités frigo</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-69-specificites-certains-transports-(lait-)" data-export-file="unit-69-specificites-certains-transports-(lait-).xml">
+<op:expUc>
+<op:uM>
+<sp:title>spécificités certains transports (lait, ...)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-70-feries" data-export-file="unit-70-feries.xml">
+<op:expUc>
+<op:uM>
+<sp:title>fériés</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-71-semaine" data-export-file="unit-71-semaine.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Semaine</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-72-week-end" data-export-file="unit-72-week-end.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Week end</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Je contrôle l'application des réglementations de temps de travail et de repos</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Chronotachygraphe (rapatriement des données)</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-73-presentation" data-export-file="unit-73-presentation.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Présentation</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-74-chronotachygraphe-analogique" data-export-file="unit-74-chronotachygraphe-analogique.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Chronotachygraphe analogique</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-75-chronotachygraphe-numerique" data-export-file="unit-75-chronotachygraphe-numerique.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Chronotachygraphe numérique </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-76-utilisation" data-export-file="unit-76-utilisation.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Utilisation</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-77-en-cas-de-panne" data-export-file="unit-77-en-cas-de-panne.xml">
+<op:expUc>
+<op:uM>
+<sp:title>En cas de panne</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Contrôles sur route</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Sanctions</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-78-conducteur" data-export-file="unit-78-conducteur.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Conducteur</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-79-entreprise" data-export-file="unit-79-entreprise.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Entreprise</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-80-obligations-du-conducteur" data-export-file="unit-80-obligations-du-conducteur.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Obligations du conducteur</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-81-obligations-de-l'employeur" data-export-file="unit-81-obligations-de-l'employeur.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Obligations de l'employeur</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réaliser un transport</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Le transport public </sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-82-notion-de-contrat-tri-partie-(voiturier--expediteur--celui-qui-receptionne-retrouver-le-nom)" data-export-file="unit-82-notion-de-contrat-tri-partie-(voiturier--expediteur--celui-qui-receptionne-retrouver-le-nom).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Notion de contrat tri partie (voiturier, expéditeur, celui qui réceptionne = retrouver le nom)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-83-notion-de-donneur-d'ordre" data-export-file="unit-83-notion-de-donneur-d'ordre.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Notion de donneur d'ordre</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Obligations contractuelles minimales</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-84-ordre-de-mission-etc-" data-export-file="unit-84-ordre-de-mission-etc-.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Ordre de mission etc.</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Constitution d'un contrat de transport</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-85-contrat-commercial-libre-de-toute-clause-(ni-illegales-ni-leonines)" data-export-file="unit-85-contrat-commercial-libre-de-toute-clause-(ni-illegales-ni-leonines).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Contrat commercial libre de toute clause (ni illégales ni léonines)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-86-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception)" data-export-file="unit-86-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Recours au contrat type lorsque le contrat de transport (contrat commercial) est absent ou incomplet (exemple : pas d'horaires de réception)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-87-regles-du-contrat-type" data-export-file="unit-87-regles-du-contrat-type.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Règles du contrat type</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Spécificités du transport sous température dirigée</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-88-regles-d'hygiene" data-export-file="unit-88-regles-d'hygiene.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Règles d'hygiène</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-89-regles-haccp" data-export-file="unit-89-regles-haccp.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Règles HACCP</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-90-chaîne-du-froid-(contrôle-temperature)" data-export-file="unit-90-chaîne-du-froid-(contrôle-temperature).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Chaîne du froid (contrôle température)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-91-categories-de-marchandises" data-export-file="unit-91-categories-de-marchandises.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Catégories de marchandises</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Catégories de transport sous température dirigée</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-92-isotherme" data-export-file="unit-92-isotherme.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Isotherme</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-93-refrigeree" data-export-file="unit-93-refrigeree.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Réfrigérée</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-94-frigorifique" data-export-file="unit-94-frigorifique.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Frigorifique</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-95-groupage/colisage" data-export-file="unit-95-groupage/colisage.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Groupage/colisage</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Transport privé (comment prouver origine de la marchandise)</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-96-notion-de-contrat-bi-ou-mono-partie-ou-activite-de-transport-accessoire" data-export-file="unit-96-notion-de-contrat-bi-ou-mono-partie-ou-activite-de-transport-accessoire.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Notion de contrat bi ou mono partie OU activité de transport accessoire</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-97-notion-de-donneur-d'ordre-responsable-de-l'entreprise-(et-plus-une-tierce-personne-comme-dans-le-transport-public)" data-export-file="unit-97-notion-de-donneur-d'ordre-responsable-de-l'entreprise-(et-plus-une-tierce-personne-comme-dans-le-transport-public).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Notion de donneur d'ordre = responsable de l'entreprise (et plus une tierce personne comme dans le transport public)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Obligations contractuelles minimales = origine de la marchandise</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-98-ordre-de-mission-etc-" data-export-file="unit-98-ordre-de-mission-etc-.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Ordre de mission etc.</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-98-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception)-limites-du-transport-prive-(quand-bascule-t-on-du-public-au-prive-et-inversement--exemples)" data-export-file="unit-98-recours-au-contrat-type-lorsque-le-contrat-de-transport-(contrat-commercial)-est-absent-ou-incomplet-(exemple-pas-d'horaires-de-reception)-limites-du-transport-prive-(quand-bascule-t-on-du-public-au-prive-et-inversement--exemples).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Recours au contrat type lorsque le contrat de transport (contrat commercial) est absent ou incomplet (exemple : pas d'horaires de réception) : Limites du transport privé (quand bascule t-on du public au privé et inversement, exemples)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Spécificités du transport sous température dirigée</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-99-regles-d'hygiene-(idem-que-public)" data-export-file="unit-99-regles-d'hygiene-(idem-que-public).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Règles d'hygiène (idem que public)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-100-regles-haccp-idem" data-export-file="unit-100-regles-haccp-idem.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Règles HACCP idem</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-101-chaîne-du-froid-(contrôle-temperature)-idem" data-export-file="unit-101-chaîne-du-froid-(contrôle-temperature)-idem.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Chaîne du froid (contrôle température) idem</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-102-categories-de-marchandises" data-export-file="unit-102-categories-de-marchandises.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Catégories de marchandises</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Catégories de transport sous température dirigée</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-102-isotherme" data-export-file="unit-102-isotherme.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Isotherme</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-102-refrigeree" data-export-file="unit-102-refrigeree.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Réfrigérée</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-102-frigorifique" data-export-file="unit-102-frigorifique.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Frigorifique</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réaliser un transport à l'international</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Le contrat de transport international (CMR)</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-102-lettre-de-voiture-detaillee-(case/case)--exemples-de-redaction" data-export-file="unit-102-lettre-de-voiture-detaillee-(case/case)--exemples-de-redaction.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Lettre de voiture détaillée (case/case), exemples de rédaction</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-103-les-specificites-des-etrangers-en-france-regles-de-cabotage" data-export-file="unit-103-les-specificites-des-etrangers-en-france-regles-de-cabotage.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Les spécificités des étrangers en France : règles de cabotage</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Autorisations de circuler</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-104-les-autorisations-de-circuler-en-europe-communautaire" data-export-file="unit-104-les-autorisations-de-circuler-en-europe-communautaire.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Les autorisations de circuler en Europe communautaire</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-105-les-autorisations-de-circuler-hors-europe-communautaire" data-export-file="unit-105-les-autorisations-de-circuler-hors-europe-communautaire.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Les autorisations de circuler hors Europe communautaire </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-106-tir" data-export-file="unit-106-tir.xml">
+<op:expUc>
+<op:uM>
+<sp:title>TIR</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-107-accords-bilateraux" data-export-file="unit-107-accords-bilateraux.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Accords bilatéraux </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Taxes de circulation</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-108-ecotaxe" data-export-file="unit-108-ecotaxe.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Ecotaxe</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-109-en-allemagne-(lkw-maut)" data-export-file="unit-109-en-allemagne-(lkw-maut).xml">
+<op:expUc>
+<op:uM>
+<sp:title>En Allemagne (LKW-Maut) </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-110-en-suisse-la-rplp-(redevance-sur-le-trafic-des-poids-lourds-liee-aux-prestations)" data-export-file="unit-110-en-suisse-la-rplp-(redevance-sur-le-trafic-des-poids-lourds-liee-aux-prestations).xml">
+<op:expUc>
+<op:uM>
+<sp:title>En Suisse : la RPLP (Redevance sur le trafic des Poids Lourds liée aux Prestations) </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-111-autres-pays" data-export-file="unit-111-autres-pays.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Autres pays</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Spécificités du privé</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-112-en-prive-contrat-de-transport-non--cabotage-non-" data-export-file="unit-112-en-prive-contrat-de-transport-non--cabotage-non-.xml">
+<op:expUc>
+<op:uM>
+<sp:title>En privé : contrat de transport non, cabotage = non, </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Documents d'accompagnement </sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>de la marchandise </sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-113-en-france/a-l'international" data-export-file="unit-113-en-france/a-l'international.xml">
+<op:expUc>
+<op:uM>
+<sp:title>En France/A l'international</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-114-acquis-a-caution" data-export-file="unit-114-acquis-a-caution.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Acquis à caution</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-115-document-veterinaire" data-export-file="unit-115-document-veterinaire.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Document vétérinaire</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-116-etc-" data-export-file="unit-116-etc-.xml">
+<op:expUc>
+<op:uM>
+<sp:title>etc.</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>du véhicule</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-117-en-france" data-export-file="unit-117-en-france.xml">
+<op:expUc>
+<op:uM>
+<sp:title>en France</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-118-a-l'international" data-export-file="unit-118-a-l'international.xml">
+<op:expUc>
+<op:uM>
+<sp:title>A l'international</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>du conducteur</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-119-en-france" data-export-file="unit-119-en-france.xml">
+<op:expUc>
+<op:uM>
+<sp:title>En France</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-120-a-l'international" data-export-file="unit-120-a-l'international.xml">
+<op:expUc>
+<op:uM>
+<sp:title>A l'international</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-120-cas-de-transport-(exercices-avec-correction)" data-export-file="unit-120-cas-de-transport-(exercices-avec-correction).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Cas de transport (exercices avec correction)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Réglementation Arrimage</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-121-reglementation-transport-(contrat-type)" data-export-file="unit-121-reglementation-transport-(contrat-type).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Réglementation transport (contrat type)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-122-responsabilites" data-export-file="unit-122-responsabilites.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Responsabilités</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-123-untitled" data-export-file="unit-123-untitled.xml">
+<op:expUc>
+<op:uM>
+<sp:title>
+                Untitled
+              </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Thème 3 : Santé, sécurité routière et environnementale</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>la conduite préventive et l'évaluation des situations d'urgence notamment à travers des exercices pratiques et études de cas permettant une approche pragmatique et efficace des situations à risques</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Exemples concrets de situations à risque</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>De par le véhicule</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-123-manoeuvres" data-export-file="unit-123-manoeuvres.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Manoeuvres</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-124-angles-morts-d'un-car" data-export-file="unit-124-angles-morts-d'un-car.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Angles morts d'un car</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-125-porte-a-faux" data-export-file="unit-125-porte-a-faux.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Porte-à-faux</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-126-de-par-les-marchandises-transportees" data-export-file="unit-126-de-par-les-marchandises-transportees.xml">
+<op:expUc>
+<op:uM>
+<sp:title>De par les marchandises transportées</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Situations urgentes</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-127-accident" data-export-file="unit-127-accident.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Accident</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-128-incendie" data-export-file="unit-128-incendie.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Incendie</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-129-faire-face-a-une-situation-a-risque" data-export-file="unit-129-faire-face-a-une-situation-a-risque.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Faire face à une situation à risque</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>les règles de circulation et de signalisation routières</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-130-limitations-de-vitesse-des-vehicules-de-trm" data-export-file="unit-130-limitations-de-vitesse-des-vehicules-de-trm.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Limitations de vitesse des véhicules de TRM</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-131-signalisation-specifiques-aux-vehicules-de-transport-routier-de-marchandises" data-export-file="unit-131-signalisation-specifiques-aux-vehicules-de-transport-routier-de-marchandises.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Signalisation spécifiques aux véhicules de transport routIer de marchandises</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-132-untitled" data-export-file="unit-132-untitled.xml">
+<op:expUc>
+<op:uM>
+<sp:title>
+                Untitled
+              </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-132-untitled" data-export-file="unit-132-untitled.xml">
+<op:expUc>
+<op:uM>
+<sp:title>
+                Untitled
+              </sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Utilisation d’infrastructures particulières </sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-132-rond-point" data-export-file="unit-132-rond-point.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Rond point</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-133-ouvrages-d'art" data-export-file="unit-133-ouvrages-d'art.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Ouvrages d'art</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>les accidents du travail en circulation et à l'arrêt</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-134-accidents-de-travail-dans-le-trm" data-export-file="unit-134-accidents-de-travail-dans-le-trm.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Accidents de travail dans le TRM</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-135-remplir-un-constat-(scenario-d'accident-impliquant-le-vehicule-de-trm)" data-export-file="unit-135-remplir-un-constat-(scenario-d'accident-impliquant-le-vehicule-de-trm).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Remplir un constat (Scénario d'accident impliquant le véhicule de TRM)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>la criminalité et le trafic des clandestins</sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Criminalité dans le TRM</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-136-agression-contre-les-conducteurs" data-export-file="unit-136-agression-contre-les-conducteurs.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Agression contre les conducteurs</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-137-vols-de-marchandises" data-export-file="unit-137-vols-de-marchandises.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Vols de marchandises</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-138-prevention-des-risques" data-export-file="unit-138-prevention-des-risques.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Prévention des risques</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Thème 4 : Service, logistique propres au transport de marchandises </sp:title>
+</op:ueDivM>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>l'environnement économique du transport routier de marchandises et l'organisation du marché</sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-139-les-commissionnaires-de-transport" data-export-file="unit-139-les-commissionnaires-de-transport.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Les commissionnaires de transport</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-140-la-logistique-urbaine-et-la-livraison-en-ville" data-export-file="unit-140-la-logistique-urbaine-et-la-livraison-en-ville.xml">
+<op:expUc>
+<op:uM>
+<sp:title>La logistique urbaine et la livraison en ville</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-141-etat-des-lieux-(donnees-chiffrees)-et-evolution-(hub-de-stockage--hub-de-transport)" data-export-file="unit-141-etat-des-lieux-(donnees-chiffrees)-et-evolution-(hub-de-stockage--hub-de-transport).xml">
+<op:expUc>
+<op:uM>
+<sp:title>Etat des lieux (données chiffrées) et évolution (hub de stockage, hub de transport)</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-142-environnement-logistique" data-export-file="unit-142-environnement-logistique.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Environnement logistique</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:div>
+<op:ueDiv>
+<op:ueDivM>
+<sp:title>Autres modes de transport </sp:title>
+</op:ueDivM>
+<sp:courseUc data-export-id="uoc-143-ferroutage" data-export-file="unit-143-ferroutage.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Ferroutage</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-144-fluvial" data-export-file="unit-144-fluvial.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Fluvial</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+<sp:courseUc data-export-id="uoc-145-combine" data-export-file="unit-145-combine.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Combiné</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+<sp:courseUc data-export-id="uoc-146-problemes-de-concurrence-internationale" data-export-file="unit-146-problemes-de-concurrence-internationale.xml">
+<op:expUc>
+<op:uM>
+<sp:title>Problèmes de concurrence internationale</sp:title>
+</op:uM>
+</op:expUc>
+</sp:courseUc>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ueDiv>
+</sp:div>
+</op:ue>
+</sc:item>
