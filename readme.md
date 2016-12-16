@@ -1,4 +1,8 @@
 
+The goal of this tool is to convert mind mapping files from [Freemind](http://freemind.sourceforge.net/wiki/index.php/Main_Page) to Hdoc file for [Scenari](http://scenari-platform.org/projects/scenari/fr/pres/co/).
+A map mapping can be convert to structured document.
+
+
 # How to use the converter
 
 ##1 : you want to convert your freemindFile in Hdoc
