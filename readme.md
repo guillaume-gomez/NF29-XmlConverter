@@ -17,4 +17,4 @@ you will find the result in the folder result/hdoc
 you will find the result in the folder result/opale
 
 -------------------
-[Webiste](https://stph.scenari-community.org/nf29/co/nf29.html)
+[Website](https://stph.scenari-community.org/nf29/co/nf29.html)
